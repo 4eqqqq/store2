@@ -30,7 +30,7 @@
       "additionalSetColors": []
     },
     "versionFirst": "4.3.4",
-    "uniqCompNum": 37,
+    "uniqCompNum": 39,
     "versionPublish": "4.3.4"
   },
   "pages": {
@@ -705,9 +705,8 @@
             }
           },
           "_name": "shop6",
-          "_customHTML": "<section class=\"mbr-gallery\" group=\"Shops\" once=\"shops\" plugins=\"mobirise-shop,Gallery\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n        <input type=\"range\" title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"6\" inline>\n        <input type=\"range\" title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"6\" inline>\n        <input type=\"color\" title=\"Card Bg\" name=\"cardBg\" value=\"#a38dfd\">\n        <input type=\"color\" title=\"On Sale Bg\" name=\"saleBg\" value=\"#fe525b\">\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\">\n\n        <input type=\"shop\" title=\"Shop\" name=\"shop\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div mbr-class=\"{'container': !fullWidth}\">\n        <div mbr-shop=\"shop\" class=\"mbr-shop\"></div>\n    </div>\n\n</section>",
-          "_cid": "qyjWOlbbYy",
-          "_anchor": "shop6-10",
+          "_customHTML": "<section class=\"mbr-gallery\"\r\n         group=\"Shops\"\r\n         once=\"shops\"\r\n         plugins=\"mobirise-shop,Gallery\">\r\n\r\n    <mbr-parameters>\r\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\r\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\r\n        <input type=\"range\" title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"6\" inline>\r\n        <input type=\"range\" title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"6\" inline>\r\n        <input type=\"color\" title=\"Card Bg\" name=\"cardBg\" value=\"#a38dfd\">\r\n        <input type=\"color\" title=\"On Sale Bg\" name=\"saleBg\" value=\"#fe525b\">\r\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\">\r\n\r\n        <input type=\"shop\" title=\"Shop\" name=\"shop\">\r\n    <!-- End block parameters -->\r\n    </mbr-parameters>\r\n\r\n    <div mbr-class=\"{'container': !fullWidth}\">\r\n        <div mbr-shop=\"shop\" class=\"mbr-shop\"></div>\r\n    </div>\r\n\r\n</section>",
+          "_cid": "qyjXWpDhCp",
           "_protectedParams": [
             "shop__showSidebar",
             "shop__showCardButtons",
@@ -750,22 +749,21 @@
               {
                 "tags": "Awesome",
                 "bestSeller": false,
-                "onSale": true,
-                "oldPrice": true,
+                "onSale": false,
+                "oldPrice": false,
                 "itemTitle": "Flying Cowboy Hat",
                 "itemDescription": "Casual shoes (contact us for sizing)<br><br><ul><li>Lightweight textured fabric</li> <li>Rounded v-neckline</li> <li>Pom pom trims</li> <li>Regular fit – true to size</li></ul> <br>Duis auctor hendrerit nisi, at lacinia ex vulputate quis. Suspendisse convallis iaculis tortor, quis mattis lectus rutrum a.<br><br> Product code: <b>385DDF5p</b>",
                 "itemPriceTitle": "From: ",
-                "itemPrice": "$13.99",
+                "itemPrice": "$9.99",
                 "oldPriceValue": "$19.98",
-                "sale": "-30%",
-                "button": "<a data-app-btn=\"true\" href=\"https://mobirise.com\" class=\"btn btn-primary display-7\">Buy now!</a>",
+                "sale": "-50%",
+                "button": "<a data-app-btn=\"true\" class=\"btn btn-primary\" href=\"https://mobirise.com\">Buy now!</a>",
                 "image": "@PROJECT_PATH@/assets/images/shop0.jpg",
                 "thumb": "@PROJECT_PATH@/assets/images/shop0.jpg",
                 "customStyle5": "display-5",
                 "customStyle7": "display-7",
                 "caption": "Type caption here",
-                "active": true,
-                "onsale": "-50%"
+                "active": true
               },
               {
                 "tags": "Wonderful",
@@ -901,7 +899,8 @@
                 "active": false
               }
             ]
-          }
+          },
+          "_anchor": "shop6-12"
         }
       ]
     }
