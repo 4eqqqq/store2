@@ -1,6 +1,6 @@
 {
   "settings": {
-    "name": "Site-10-13_1030",
+    "name": "Site-10-17_1535",
     "currentPage": "index.html",
     "theme": {
       "name": "storem4",
@@ -29,12 +29,9 @@
       },
       "additionalSetColors": []
     },
-    "versionFirst": "4.3.3",
-    "uniqCompNum": 228,
-    "versionPublish": "4.3.4",
-    "mcShopcart": {
-      "email": "Serega.Vili@yandex.ru"
-    }
+    "versionFirst": "4.3.4",
+    "uniqCompNum": 37,
+    "versionPublish": "4.3.4"
   },
   "pages": {
     "index.html": {
@@ -281,7 +278,7 @@
               "display": "block",
               "transition": "color .3s ease",
               "text-align": "center",
-              "z-index": "3",
+              "z-index": "100",
               "height": "30px",
               "line-height": "30px",
               "padding": "0 15px",
@@ -450,14 +447,13 @@
             },
             ".mbr-shop .text-modal .price-block": {
               "line-height": "1",
-              "text-align": "left",
               "border-bottom": "1px dotted #d6d6d6"
             },
             ".mbr-shop .text-modal .price-block p": {
               "display": "inline"
             },
             ".mbr-shop .text-modal .price-block span": {
-              "display": "block",
+              "display": "inline-block",
               "font-weight": "700",
               "padding": "10px 0 20px 0"
             },
@@ -686,57 +682,32 @@
             ".range-slider .mbr-section-btn": {
               "margin": "0"
             },
+            ".oldprice": {
+              "color": "#767676",
+              "padding-left": ".8rem",
+              "text-decoration": "line-through"
+            },
             ".mbr-gallery-item": {
-              ".img_wraper": {
-                "img": {
-                  "-webkit-filter": "grayscale(100%)",
-                  "-moz-filter": "grayscale(100%)",
-                  "-ms-filter": "grayscale(100%)",
-                  "-o-filter": "grayscale(100%)",
-                  "filter": "gray"
-                }
-              },
               ".sidebar_wraper": {
-                "padding": ".5rem",
-                "position": "absolute",
-                "bottom": "0",
-                "width": "100%",
-                "color": "#ffffff",
                 ".mbr-section-btn": {
-                  "text-align": "right"
+                  "text-align": "left"
                 },
                 ".item-title": {
-                  "text-align": "right"
+                  "text-align": "left"
                 },
                 ".item-subtitle": {
-                  "text-align": "right"
+                  "text-align": "left"
                 },
                 ".price-block": {
-                  "text-align": "right"
-                }
-              },
-              "&:hover": {
-                ".style_overlay": {
-                  "background": "@itemOverlay",
-                  "opacity": "@itemOverlayOpacity",
-                  "transition": "all .5s"
-                },
-                ".sidebar_wraper": {},
-                ".img_wraper": {
-                  "img": {
-                    "-webkit-filter": "grayscale(0)",
-                    "-moz-filter": "grayscale(0)",
-                    "-ms-filter": "grayscale(0)",
-                    "-o-filter": "grayscale(0)",
-                    "filter": "none"
-                  }
+                  "text-align": "left"
                 }
               }
             }
           },
-          "_name": "shop2",
-          "_customHTML": "<section class=\"mbr-gallery\"\r\n         group=\"Shops\"\r\n         once=\"shops\"\r\n         plugins=\"mobirise-shop,Gallery\">\r\n\r\n    <mbr-parameters>\r\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\r\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\r\n        <input type=\"range\" title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"6\" inline>\r\n        <input type=\"range\" title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"6\" inline>\r\n        <input type=\"color\" title=\"Item Hover Overlay\" name=\"itemOverlay\" value=\"#a38dfd\" >\r\n        <input type=\"range\" inline title=\"Hover Opacity\" name=\"itemOverlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\">\r\n        <input type=\"color\" title=\"On Sale Bg\" name=\"saleBg\" value=\"#232323\">\r\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\">\r\n        <input type=\"shop\" title=\"Shop\" name=\"shop\">\r\n    <!-- End block parameters -->\r\n    </mbr-parameters>\r\n\r\n    <div mbr-class=\"{'container': !fullWidth}\">\r\n        <div mbr-shop=\"shop\" class=\"mbr-shop\"></div>\r\n    </div>\r\n\r\n</section>",
-          "_cid": "qye5k291S8",
+          "_name": "shop6",
+          "_customHTML": "<section class=\"mbr-gallery\" group=\"Shops\" once=\"shops\" plugins=\"mobirise-shop,Gallery\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n        <input type=\"range\" title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"6\" inline>\n        <input type=\"range\" title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"6\" inline>\n        <input type=\"color\" title=\"Card Bg\" name=\"cardBg\" value=\"#a38dfd\">\n        <input type=\"color\" title=\"On Sale Bg\" name=\"saleBg\" value=\"#fe525b\">\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\">\n\n        <input type=\"shop\" title=\"Shop\" name=\"shop\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div mbr-class=\"{'container': !fullWidth}\">\n        <div mbr-shop=\"shop\" class=\"mbr-shop\"></div>\n    </div>\n\n</section>",
+          "_cid": "qyjWOlbbYy",
+          "_anchor": "shop6-10",
           "_protectedParams": [
             "shop__showSidebar",
             "shop__showCardButtons",
@@ -779,30 +750,33 @@
               {
                 "tags": "Awesome",
                 "bestSeller": false,
-                "onSale": false,
+                "onSale": true,
+                "oldPrice": true,
                 "itemTitle": "Flying Cowboy Hat",
-                "itemSubtitle": "made for walking",
                 "itemDescription": "Casual shoes (contact us for sizing)<br><br><ul><li>Lightweight textured fabric</li> <li>Rounded v-neckline</li> <li>Pom pom trims</li> <li>Regular fit – true to size</li></ul> <br>Duis auctor hendrerit nisi, at lacinia ex vulputate quis. Suspendisse convallis iaculis tortor, quis mattis lectus rutrum a.<br><br> Product code: <b>385DDF5p</b>",
                 "itemPriceTitle": "From: ",
-                "itemPrice": "$9.99",
-                "sale": "-50%",
-                "button": "<a data-app-btn=\"true\" class=\"btn btn-primary\" href=\"https://mobirise.com\">Buy now!</a>",
+                "itemPrice": "$13.99",
+                "oldPriceValue": "$19.98",
+                "sale": "-30%",
+                "button": "<a data-app-btn=\"true\" href=\"https://mobirise.com\" class=\"btn btn-primary display-7\">Buy now!</a>",
                 "image": "@PROJECT_PATH@/assets/images/shop0.jpg",
                 "thumb": "@PROJECT_PATH@/assets/images/shop0.jpg",
                 "customStyle5": "display-5",
                 "customStyle7": "display-7",
                 "caption": "Type caption here",
-                "active": true
+                "active": true,
+                "onsale": "-50%"
               },
               {
                 "tags": "Wonderful",
                 "bestSeller": false,
                 "onSale": false,
+                "oldPrice": false,
                 "itemTitle": "Fast Carbs",
-                "itemSubtitle": "made for walking",
                 "itemDescription": "Casual shoes (contact us for sizing)<br><br><ul><li>Lightweight textured fabric</li> <li>Rounded v-neckline</li> <li>Pom pom trims</li> <li>Regular fit – true to size</li></ul> <br>Duis auctor hendrerit nisi, at lacinia ex vulputate quis. Suspendisse convallis iaculis tortor, quis mattis lectus rutrum a.<br><br> Product code: <b>385DDF5p</b>",
                 "itemPriceTitle": "From: ",
                 "itemPrice": "$9.99",
+                "oldPriceValue": "$19.98",
                 "sale": "-50%",
                 "button": "<a data-app-btn=\"true\" class=\"btn btn-primary\" href=\"https://mobirise.com\">Buy now!</a>",
                 "image": "@PROJECT_PATH@/assets/images/shop1.jpg",
@@ -816,11 +790,12 @@
                 "tags": "Creative",
                 "bestSeller": false,
                 "onSale": true,
+                "oldPrice": true,
                 "itemTitle": "Bicycle",
-                "itemSubtitle": "made for walking",
                 "itemDescription": "Casual shoes (contact us for sizing)<br><br><ul><li>Lightweight textured fabric</li> <li>Rounded v-neckline</li> <li>Pom pom trims</li> <li>Regular fit – true to size</li></ul> <br>Duis auctor hendrerit nisi, at lacinia ex vulputate quis. Suspendisse convallis iaculis tortor, quis mattis lectus rutrum a.<br><br> Product code: <b>385DDF5p</b>",
                 "itemPriceTitle": "From: ",
                 "itemPrice": "$9.99",
+                "oldPriceValue": "$19.98",
                 "sale": "-50%",
                 "button": "<a data-app-btn=\"true\" class=\"btn btn-primary\" href=\"https://mobirise.com\">Buy now!</a>",
                 "image": "@PROJECT_PATH@/assets/images/shop2.jpg",
@@ -834,11 +809,12 @@
                 "tags": "Awesome",
                 "bestSeller": false,
                 "onSale": false,
+                "oldPrice": false,
                 "itemTitle": "Cap of invisibility",
-                "itemSubtitle": "made for walking",
                 "itemDescription": "Casual shoes (contact us for sizing)<br><br><ul><li>Lightweight textured fabric</li> <li>Rounded v-neckline</li> <li>Pom pom trims</li> <li>Regular fit – true to size</li></ul> <br>Duis auctor hendrerit nisi, at lacinia ex vulputate quis. Suspendisse convallis iaculis tortor, quis mattis lectus rutrum a.<br><br> Product code: <b>385DDF5p</b>",
                 "itemPriceTitle": "From: ",
                 "itemPrice": "$9.99",
+                "oldPriceValue": "$19.98",
                 "sale": "-50%",
                 "button": "<a data-app-btn=\"true\" class=\"btn btn-primary\" href=\"https://mobirise.com\">Buy now!</a>",
                 "image": "@PROJECT_PATH@/assets/images/shop3.jpg",
@@ -852,11 +828,12 @@
                 "tags": "Responsive",
                 "bestSeller": false,
                 "onSale": false,
+                "oldPrice": false,
                 "itemTitle": "Invisible Hat",
-                "itemSubtitle": "made for walking",
                 "itemDescription": "Casual shoes (contact us for sizing)<br><br><ul><li>Lightweight textured fabric</li> <li>Rounded v-neckline</li> <li>Pom pom trims</li> <li>Regular fit – true to size</li></ul> <br>Duis auctor hendrerit nisi, at lacinia ex vulputate quis. Suspendisse convallis iaculis tortor, quis mattis lectus rutrum a.<br><br> Product code: <b>385DDF5p</b>",
                 "itemPriceTitle": "From: ",
                 "itemPrice": "$9.99",
+                "oldPriceValue": "$19.98",
                 "sale": "-50%",
                 "button": "<a data-app-btn=\"true\" class=\"btn btn-primary\" href=\"https://mobirise.com\">Buy now!</a>",
                 "image": "@PROJECT_PATH@/assets/images/shop4.jpg",
@@ -870,11 +847,12 @@
                 "tags": "Creative",
                 "bestSeller": false,
                 "onSale": false,
+                "oldPrice": false,
                 "itemTitle": "Shoes",
-                "itemSubtitle": "made for walking",
                 "itemDescription": "Casual shoes (contact us for sizing)<br><br><ul><li>Lightweight textured fabric</li> <li>Rounded v-neckline</li> <li>Pom pom trims</li> <li>Regular fit – true to size</li></ul> <br>Duis auctor hendrerit nisi, at lacinia ex vulputate quis. Suspendisse convallis iaculis tortor, quis mattis lectus rutrum a.<br><br> Product code: <b>385DDF5p</b>",
                 "itemPriceTitle": "From: ",
                 "itemPrice": "$9.99",
+                "oldPriceValue": "$19.98",
                 "sale": "-50%",
                 "button": "<a data-app-btn=\"true\" class=\"btn btn-primary\" href=\"https://mobirise.com\">Buy now!</a>",
                 "image": "@PROJECT_PATH@/assets/images/shop5.jpg",
@@ -888,11 +866,12 @@
                 "tags": "Animated",
                 "bestSeller": false,
                 "onSale": false,
+                "oldPrice": false,
                 "itemTitle": "Backpack",
-                "itemSubtitle": "made for walking",
                 "itemDescription": "Casual shoes (contact us for sizing)<br><br><ul><li>Lightweight textured fabric</li> <li>Rounded v-neckline</li> <li>Pom pom trims</li> <li>Regular fit – true to size</li></ul> <br>Duis auctor hendrerit nisi, at lacinia ex vulputate quis. Suspendisse convallis iaculis tortor, quis mattis lectus rutrum a.<br><br> Product code: <b>385DDF5p</b>",
                 "itemPriceTitle": "From: ",
                 "itemPrice": "$9.99",
+                "oldPriceValue": "$19.98",
                 "sale": "-50%",
                 "button": "<a data-app-btn=\"true\" class=\"btn btn-primary\" href=\"https://mobirise.com\">Buy now!</a>",
                 "image": "@PROJECT_PATH@/assets/images/shop6.jpg",
@@ -906,11 +885,12 @@
                 "tags": "Awesome",
                 "bestSeller": false,
                 "onSale": false,
+                "oldPrice": false,
                 "itemTitle": "Fun garlands",
-                "itemSubtitle": "made for walking",
                 "itemDescription": "Casual shoes (contact us for sizing)<br><br><ul><li>Lightweight textured fabric</li> <li>Rounded v-neckline</li> <li>Pom pom trims</li> <li>Regular fit – true to size</li></ul> <br>Duis auctor hendrerit nisi, at lacinia ex vulputate quis. Suspendisse convallis iaculis tortor, quis mattis lectus rutrum a.<br><br> Product code: <b>385DDF5p</b>",
                 "itemPriceTitle": "From: ",
                 "itemPrice": "$9.99",
+                "oldPriceValue": "$19.98",
                 "sale": "-50%",
                 "button": "<a data-app-btn=\"true\" class=\"btn btn-primary\" href=\"https://mobirise.com\">Buy now!</a>",
                 "image": "@PROJECT_PATH@/assets/images/shop7.jpg",
@@ -921,8 +901,7 @@
                 "active": false
               }
             ]
-          },
-          "_anchor": "shop2-6b"
+          }
         }
       ]
     }
