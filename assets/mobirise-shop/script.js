@@ -2,11 +2,43 @@
 
   //***************************** mbr-shop ***********************************//
 
+    // --------- Modal Window ---------- //
+    var moveToModal = function(item, context) {
+      var modal = $(context).find('.shopItemsModal'),
+          modalText = $(item).find('.sidebar_wraper').clone(),
+          modalImg = $(item).find('img').clone(),
+          modalSale = $(item).find('.onsale').clone();
+      $(modal).children('.text-modal').append(modalText);
+      $(modal).children('.image-modal').append(modalImg).append(modalSale);
+    };
+
+    var cleanModal = function(context) {
+      var modal = $(context).find('.shopItemsModal');
+      $(modal).children('.text-modal').empty();
+      $(modal).children('.image-modal').empty();
+    };
+
+    var modalEvents = function(context) {
+      $(context).find('.mbr-gallery-item .item_overlay').on('click', function(aim) {
+            var target = $(aim.target).closest('.mbr-gallery-item');
+            curentItem = target;
+            cleanModal(context);
+            moveToModal(target, context);
+            $(context).find('.shopItemsModal_wraper').css('display', 'flex');
+        });
+
+      $(context).find('.close-modal-wrapper, .shopItemsModalBg').on('click', function() {
+           $(context).find('.shopItemsModal_wraper').css('display', 'none');
+           cleanModal(context);
+      })
+    };
+    // --------- end Modal Window ---------- //
+
     //Shop's Price-Sorting
-    filterShop = function(items, sortBy) {
+    var filterShop = function(items, sortBy, context) {
       // 1=up 2=down 3=default
       if (sortBy < 3){
-        var newItems = $('.shop-items').children().sort(function(a,b) {
+        var newItems = $(context).find('.shop-items').children().sort(function(a,b) {
           var upA = parseFloat($(a).attr('data-price'));
           var upB = parseFloat($(b).attr('data-price'));
           if(sortBy == 1){
@@ -16,97 +48,21 @@
           };
         });
       } else {
-        var newItems = shopItemsDefault;
+        var newItems = $(context).find('.shop-items').children();
       }
-      $('.shop-items').children().remove();
+      $(context).find('.shop-items').children().remove();
       for(var i=0; i < newItems.length; i++){
-        $('.shop-items').append(newItems[i]);
+        $(context).find('.shop-items').append(newItems[i]);
       };
-      modalEvents();
+
+      modalEvents(context);
     };
 
-    if($('.mbr-shop').length != 0) {
-      var sortBy = 1,
-          shopItemsDefault = $('.shop-items').children(),
-          shopItems = $('.shop-items').children(),
-
-          $sortUp = $('.sort-buttons .filter-by-pu .btn'),
-          $sortDown = $('.sort-buttons .filter-by-pd .btn'),
-          $sortDefault = $('.sort-buttons .filter-by-d .btn');
-
-      $('.filter-by-pu').on('click', function(e) {
-        e.preventDefault();
-        e.stopPropagation();
-        $($sortUp).removeClass('disableSortButton btn-primary-outline').addClass('btn-primary');
-        $($sortDown).removeClass('btn-primary btn-primary-outline').addClass('btn-primary-outline disableSortButton');
-        $($sortDefault).removeClass('btn-primary btn-primary-outline').addClass('btn-primary-outline disableSortButton');
-        filterShop(shopItems, 1);
-      });
-
-      $('.filter-by-pd').on('click', function(e) {
-        e.preventDefault();
-        e.stopPropagation();
-        $($sortDown).removeClass('disableSortButton btn-primary-outline').addClass('btn-primary');
-        $($sortUp).removeClass('btn-primary btn-primary-outline').addClass('btn-primary-outline disableSortButton');
-        $($sortDefault).removeClass('btn-primary btn-primary-outline').addClass('btn-primary-outline disableSortButton');
-        filterShop(shopItems, 2);
-      });
-
-      $('.filter-by-d').on('click', function(e) {
-        e.preventDefault();
-        e.stopPropagation();
-        $($sortDefault).removeClass('disableSortButton btn-primary-outline').addClass('btn-primary');
-        $($sortUp).removeClass('btn-primary btn-primary-outline').addClass('btn-primary-outline disableSortButton');
-        $($sortDown).removeClass('btn-primary btn-primary-outline').addClass('btn-primary-outline disableSortButton');
-        filterShop(shopItems, 3);
-      });
-
-    //Filter by price range
-    $('.price-range').on('click', function(e) {
-        e.preventDefault();
-        var minPrice = $('.min-input').val(),
-            maxPrice = $('.max-input').val();
-        $('.mbr-gallery-item:not(.bestsellers .mbr-gallery-item)').each(function(i, item) {
-          if (parseFloat($(item).attr('data-price')) >= parseFloat(minPrice) && parseFloat($(item).attr('data-price')) <= parseFloat(maxPrice)){
-              $(item).removeClass('hided-by-price');
-          } else {
-              $(item).addClass('hided-by-price');
-          };
-        });
-      });
-
-    //Reset Filter by price range
-    $('.price-range-reset').on('click', function(e) {
-        e.preventDefault();
-        $('.max-input').val(findMaxItemPrice());
-        $('.min-input').val(findMinItemPrice());
-        $('.max-toggle').css('right', '0');
-        $('.min-toggle').css('left', '0');
-        $('.range-controls .bar').css('margin-left', '0px').css('width', '100%');
-        rangeSliderInit();
-        $('.mbr-gallery-item:not(.bestsellers .mbr-gallery-item)').each(function(i, item) {
-          $(item).removeClass('hided-by-price');
-        });
-      });
-
-    };
-
-    autoPriceRange = function() {
-      var minPrice = $('.min-input').val(),
-          maxPrice = $('.max-input').val();
-        $('.mbr-gallery-item:not(.bestsellers .mbr-gallery-item)').each(function(i, item) {
-          if (parseFloat($(item).attr('data-price')) >= parseFloat(minPrice) && parseFloat($(item).attr('data-price')) <= parseFloat(maxPrice)){
-              $(item).removeClass('hided-by-price');
-          } else {
-              $(item).addClass('hided-by-price');
-          };
-        });
-    };
-
+    // ---------- Range Price ---------- //
     // Max price
-    findMaxItemPrice = function() {
+    var findMaxItemPrice = function(context) {
       var maxPrice = 0;
-      $('.mbr-gallery-item').each(function(i, item) {
+      $(context).find('.mbr-gallery-item').each(function(i, item) {
           if(parseFloat($(item).attr('data-price')) > maxPrice){
             maxPrice = parseFloat($(item).attr('data-price'));
           };
@@ -115,9 +71,9 @@
     };
 
     // Min price
-    findMinItemPrice = function() {
+    var findMinItemPrice = function(context) {
       var minPrice = 1000000;
-      $('.mbr-gallery-item').each(function(i, item) {
+      $(context).find('.mbr-gallery-item').each(function(i, item) {
           if(parseFloat($(item).attr('data-price')) < minPrice){
             minPrice = parseFloat($(item).attr('data-price'));
           };
@@ -125,12 +81,25 @@
       return minPrice;
     };
 
-    // Range slider
-    rangeSliderInit = function() {
-      var inputMin    = $('input.min-input'),
-          inputMax    = $('input.max-input'),
+    //auto price
+    var autoPriceRange = function(context) {
+      var minPrice = $('.min-input').val(),
+          maxPrice = $('.max-input').val();
+        $(context).find('.mbr-gallery-item:not(.bestsellers .mbr-gallery-item)').each(function(i, item) {
+          if (parseFloat($(item).attr('data-price')) >= parseFloat(minPrice) && parseFloat($(item).attr('data-price')) <= parseFloat(maxPrice)){
+              $(item).removeClass('hided-by-price');
+          } else {
+              $(item).addClass('hided-by-price');
+          };
+        });
+    };
 
-          rangeWrap   = $('div.range-controls'),
+    // Range slider
+    var rangeSliderInit = function(context) {
+      var inputMin    = $(context).find('input.min-input'),
+          inputMax    = $(context).find('input.max-input'),
+
+          rangeWrap   = $(context).find('div.range-controls'),
           scaleBar    = rangeWrap.find('div.bar'),
 
           toggleMin   = rangeWrap.find('div.min-toggle'),
@@ -150,7 +119,7 @@
 
           constLeft = inputMin.val(),
 
-          curentWidth = parseInt($('.filter-cost').width())-20;
+          curentWidth = parseInt($(context).find('.filter-cost').width())-20;
 
       function range() {
         if (togglePos <= 0) {
@@ -192,8 +161,8 @@
                 };
               }
             });
-            $(inputMin).val(Math.floor(( findMaxItemPrice() - findMinItemPrice() ) / curentWidth * valLeft) + parseInt(constLeft));
-            autoPriceRange();
+            $(inputMin).val(Math.floor(( findMaxItemPrice(context) - findMinItemPrice(context) ) / curentWidth * valLeft) + parseInt(constLeft));
+            autoPriceRange(context);
           });
       });
       // toggleMax
@@ -225,8 +194,8 @@
                 };
               }
             });
-            $(inputMax).val(Math.ceil(( findMaxItemPrice() - findMinItemPrice() ) / curentWidth * valRight)+parseInt(constLeft));
-            autoPriceRange();
+            $(inputMax).val(Math.ceil(( findMaxItemPrice(context) - findMinItemPrice(context) ) / curentWidth * valRight)+parseInt(constLeft));
+            autoPriceRange(context);
           });
       });
 
@@ -234,127 +203,171 @@
           $(document).off('mousemove');
       });
     };
+
     //set max min value
-    if($('.mbr-shop').length != 0) {
-      $(document).ready(function() {
-        $('input[name=max]').attr('value', findMaxItemPrice());
-        $('input[name=min]').attr('value', findMinItemPrice());
-        if($('.range-slider').css('display') == 'block') {rangeSliderInit()};
-      })
+    var priceSliderInit = function(context) {
+      $(context).find('input[name=max]').attr('value', findMaxItemPrice(context));
+      $(context).find('input[name=min]').attr('value', findMinItemPrice(context));
+      if($(context).find('.range-slider').css('display') == 'block') { rangeSliderInit(context) };
     };
+    // ---------- end Range Price ---------- //
+     
+    //ShopCategories
+    var initShopCategories = function(context) {
+      var $section = $(context),
+          allItem = $(context).find('.mbr-gallery-filter-all'),
+          filterList = [];
 
-    //Custom shop modal window
-    if (!$('html').hasClass('is-builder')){
-      var curentItem;
-      moveToModal = function(item) {
-        var modal = $('.shopItemsModal'),
-            modalText = $(item).find('.sidebar_wraper').clone(),
-            modalImg = $(item).find('img').clone(),
-            modalSale = $(item).find('.onsale').clone();
-        $(modal).children('.text-modal').append(modalText);
-        $(modal).children('.image-modal').append(modalImg).append(modalSale);
-      };
+      if (!$section.length) return;
 
-      cleanModal = function() {
-        var modal = $('.shopItemsModal');
-        $(modal).children('.text-modal').empty();
-        $(modal).children('.image-modal').empty();
-      };
+      $section.find('.mbr-gallery-item').each(function(el) {
+        var tagsAttr = ($(this).attr('data-tags')||"").trim();
+        var tagsList = tagsAttr.split(',');
+        tagsList.map(function(el) {
+          var tag = el.trim();
+          if ($.inArray(tag, filterList) == -1)
+              filterList.push(tag);
+          })
+        })
 
-      modalEvents = function() {
-        $('.mbr-shop .mbr-gallery-item .item_overlay').on('click', function(aim) {
-              var target = $(aim.target).closest('.mbr-gallery-item');
-              curentItem = target;
-              cleanModal();
-              moveToModal(target);
-              $('.shopItemsModal_wraper').css('display', 'flex');
+        if ($section.find('.mbr-gallery-filter').length > 0 && $section.find('.mbr-gallery-filter').hasClass('gallery-filter-active')) {
+            var filterHtml = '';
+            $section.find('.mbr-gallery-filter ul li:not(li:eq(0))').remove();
+            filterList.map(function(el) {
+                filterHtml += '<li class="display-7">' + el + '</li>'
+            });
+
+            $section.find('.mbr-gallery-filter ul').append(allItem).append(filterHtml);
+            $section.on('click', '.mbr-gallery-filter li', function(e) {
+                e.preventDefault();
+                $li = $(this);
+                $li.parent().find('li').removeClass('active');
+                $li.addClass('active');
+
+                var $mas = $li.closest('section').find('.mbr-gallery-row');
+                var filter = $li.html().trim();
+
+                $section.find('.mbr-gallery-item:not(.bestsellers .mbr-gallery-item)').each(function(i, el) {
+                    var $elem = $(this);
+                    var tagsAttr = $elem.attr('data-tags');
+                    var tags = tagsAttr.split(',');
+                    tagsTrimmed = tags.map(function(el) {
+                        return el.trim();
+                    })
+                    if ($.inArray(filter, tagsTrimmed) == -1 && !$li.hasClass('mbr-gallery-filter-all')) {
+                        $elem.addClass('mbr-gallery-item__hided');
+                        setTimeout(function() {
+                            $elem.css('left', '300px');
+                        }, 200);
+                    } else {
+                        $elem.removeClass('mbr-gallery-item__hided');
+                    };
+
+                })
+                setTimeout(function() {
+                    $mas.closest('.mbr-gallery-row').trigger('filter');
+                }, 50);
+            })
+        } else {
+            $section.find('.mbr-gallery-item__hided').removeClass('mbr-gallery-item__hided');
+            $section.find('.mbr-gallery-row').trigger('filter');
+        }
+    }
+
+    $(document).ready(function() {
+      var shops = $('.mbr-shop');
+      if(shops) {
+        $(shops).each(function(index, el) {
+          var sortBy = 1,
+              shopItemsDefault = $(el).find('.shop-items').children(),
+              shopItems = $(el).find('.shop-items').children(),
+
+              $sortUp = $(el).find('.sort-buttons .filter-by-pu .btn'),
+              $sortDown = $(el).find('.sort-buttons .filter-by-pd .btn'),
+              $sortDefault = $(el).find('.sort-buttons .filter-by-d .btn'),
+              sortStyle = $(el).closest('section').attr('data-sortbtn');
+
+          $(el).find('.filter-by-pu').on('click', function(e) {
+
+            e.preventDefault();
+            e.stopPropagation();
+            $($sortUp).removeClass('disableSortButton '+sortStyle+'-outline').addClass(sortStyle);
+            $($sortDown).removeClass(sortStyle+' '+sortStyle+'-outline').addClass(sortStyle+'-outline'+' disableSortButton');
+            $($sortDefault).removeClass(sortStyle+' '+sortStyle+'-outline').addClass(sortStyle+'-outline'+' disableSortButton');
+            filterShop(shopItems, 1, el);
           });
 
-        $('.close-modal-wrapper, .shopItemsModalBg').on('click', function() {
-             $('.shopItemsModal_wraper').css('display', 'none');
-             cleanModal();
-        })
-      };
+          $(el).find('.filter-by-pd').on('click', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            $($sortDown).removeClass('disableSortButton btn-primary-outline').addClass(sortStyle);
+            $($sortUp).removeClass(sortStyle+' '+sortStyle+'-outline').addClass(sortStyle+'-outline'+' disableSortButton');
+            $($sortDefault).removeClass(sortStyle+' '+sortStyle+'-outline').addClass(sortStyle+'-outline'+' disableSortButton');
+            filterShop(shopItems, 2, el);
+          });
 
-      if($('.mbr-shop').length != 0) {
-        $(document).ready(function() {
-          shopItems = $('.shop-items').children();
-          filterShop(shopItems, 3);
-        });
-        var isMobile = navigator.userAgent.match( /(iPad)|(iPhone)|(iPod)|(Android)|(PlayBook)|(BB10)|(BlackBerry)|(Opera Mini)|(IEMobile)|(webOS)|(MeeGo)/i );
-        var isTouch = isMobile !== null || document.createTouch !== undefined || ( 'ontouchstart' in window ) || ( 'onmsgesturechange' in window ) || navigator.msMaxTouchPoints;
-        if( !isTouch ){
-          $('input.min-input, input.max-input').prop("disabled", true);
-          $('.filterPriceRange').css('display', 'none');
-        } else{
-          $('.range-controls').css('display', 'none');
-          $('.price-controls, .filter-cost').css('margin-bottom', '15px');
-        }
+          $(el).find('.filter-by-d').on('click', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            $($sortDefault).removeClass('disableSortButton '+sortStyle+'-outline').addClass(sortStyle);
+            $($sortUp).removeClass(sortStyle+' '+sortStyle+'-outline').addClass(sortStyle+'-outline'+' disableSortButton');
+            $($sortDown).removeClass(sortStyle+' '+sortStyle+'-outline').addClass(sortStyle+'-outline'+' disableSortButton');
+            filterShop(shopItems, 3, el);
+          });
 
-      }
-    };
-
-    //ShopCategories
-    var allItem = $('.mbr-gallery-filter-all');
-    $(document).ready(function() {
-        var $section = $(document).find('div.mbr-shop');
-        var filterList = [];
-
-        if (!$section.length) return;
-
-        $section.find('.mbr-gallery-item').each(function(el) {
-          var tagsAttr = ($(this).attr('data-tags')||"").trim();
-          var tagsList = tagsAttr.split(',');
-          tagsList.map(function(el) {
-            var tag = el.trim();
-            if ($.inArray(tag, filterList) == -1)
-                filterList.push(tag);
-            })
-          })
-
-          if ($section.find('.mbr-gallery-filter').length > 0 && $section.find('.mbr-gallery-filter').hasClass('gallery-filter-active')) {
-              var filterHtml = '';
-              $section.find('.mbr-gallery-filter ul li:not(li:eq(0))').remove();
-              filterList.map(function(el) {
-                  filterHtml += '<li class="display-7">' + el + '</li>'
+          //Filter by price range
+          $(el).find('.price-range').on('click', function(e) {
+              e.preventDefault();
+              var minPrice = $(el).find('.min-input').val(),
+                  maxPrice = $(el).find('.max-input').val();
+              $(el).find('.mbr-gallery-item:not(.bestsellers .mbr-gallery-item)').each(function(i, item) {
+                if (parseFloat($(item).attr('data-price')) >= parseFloat(minPrice) && parseFloat($(item).attr('data-price')) <= parseFloat(maxPrice)){
+                    $(item).removeClass('hided-by-price');
+                } else {
+                    $(item).addClass('hided-by-price');
+                };
               });
+            });
 
-              $section.find('.mbr-gallery-filter ul').append(allItem).append(filterHtml);
-              $section.on('click', '.mbr-gallery-filter li', function(e) {
-                  e.preventDefault();
-                  $li = $(this);
-                  $li.parent().find('li').removeClass('active');
-                  $li.addClass('active');
+          //Reset Filter by price range
+          $(el).find('.price-range-reset').on('click', function(e) {
+              e.preventDefault();
+              $(el).find('.max-input').val(findMaxItemPrice(el));
+              $(el).find('.min-input').val(findMinItemPrice(el));
+              $(el).find('.max-toggle').css('right', '0');
+              $(el).find('.min-toggle').css('left', '0');
+              $(el).find('.range-controls .bar').css('margin-left', '0px').css('width', '100%');
+              rangeSliderInit(el);
+              $(el).find('.mbr-gallery-item:not(.bestsellers .mbr-gallery-item)').each(function(i, item) {
+                $(item).removeClass('hided-by-price');
+              });
+            });
+          priceSliderInit(el);
+          initShopCategories(el);
 
-                  var $mas = $li.closest('section').find('.mbr-gallery-row');
-                  var filter = $li.html().trim();
+          //default sorting
+          filterShop($(el).find('.shop-items').children(), 3, el);
+        });
 
-                  $section.find('.mbr-gallery-item:not(.bestsellers .mbr-gallery-item)').each(function(i, el) {
-                      var $elem = $(this);
-                      var tagsAttr = $elem.attr('data-tags');
-                      var tags = tagsAttr.split(',');
-                      tagsTrimmed = tags.map(function(el) {
-                          return el.trim();
-                      })
-                      if ($.inArray(filter, tagsTrimmed) == -1 && !$li.hasClass('mbr-gallery-filter-all')) {
-                          $elem.addClass('mbr-gallery-item__hided');
-                          setTimeout(function() {
-                              $elem.css('left', '300px');
-                          }, 200);
-                      } else {
-                          $elem.removeClass('mbr-gallery-item__hided');
-                      };
+        //Custom shop modal window
+        if (!$('html').hasClass('is-builder')){
+          var curentItem;
 
-                  })
-                  setTimeout(function() {
-                      $mas.closest('.mbr-gallery-row').trigger('filter');
-                  }, 50);
-              })
-          } else {
-              $section.find('.mbr-gallery-item__hided').removeClass('mbr-gallery-item__hided');
-              $section.find('.mbr-gallery-row').trigger('filter');
+          if($('.mbr-shop').length != 0) {
+            var isMobile = navigator.userAgent.match( /(iPad)|(iPhone)|(iPod)|(Android)|(PlayBook)|(BB10)|(BlackBerry)|(Opera Mini)|(IEMobile)|(webOS)|(MeeGo)/i );
+            var isTouch = isMobile !== null || document.createTouch !== undefined || ( 'ontouchstart' in window ) || ( 'onmsgesturechange' in window ) || navigator.msMaxTouchPoints;
+            if( !isTouch ){
+              $('input.min-input, input.max-input').prop("disabled", true);
+              $('.filterPriceRange').css('display', 'none');
+            } else{
+              $('.range-controls').css('display', 'none');
+              $('.price-controls, .filter-cost').css('margin-bottom', '15px');
+            }
+
           }
-      });
+        };
+      }
+    });
 
   //*********************************************************************//
 

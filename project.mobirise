@@ -1,6 +1,6 @@
 {
   "settings": {
-    "name": "Site-10-17_1535",
+    "name": "Site-10-19_1424",
     "currentPage": "index.html",
     "theme": {
       "name": "storem4",
@@ -30,7 +30,7 @@
       "additionalSetColors": []
     },
     "versionFirst": "4.3.4",
-    "uniqCompNum": 39,
+    "uniqCompNum": 45,
     "versionPublish": "4.3.4"
   },
   "pages": {
@@ -153,6 +153,7 @@
               "margin-right": "3px"
             },
             ".mbr-shop .sort-buttons": {
+              "padding-bottom": "1rem",
               "margin-right": "13px",
               "text-align": "right"
             },
@@ -210,6 +211,7 @@
               "right": "15%"
             },
             ".mbr-shop .sidebar": {
+              "margin-top": "30px",
               "position": "relative"
             },
             ".mbr-shop .sidebar-block": {
@@ -693,7 +695,8 @@
                   "text-align": "left"
                 },
                 ".item-title": {
-                  "text-align": "left"
+                  "text-align": "left",
+                  "padding-bottom": ".5rem"
                 },
                 ".item-subtitle": {
                   "text-align": "left"
@@ -705,8 +708,8 @@
             }
           },
           "_name": "shop6",
-          "_customHTML": "<section class=\"mbr-gallery\"\r\n         group=\"Shops\"\r\n         once=\"shops\"\r\n         plugins=\"mobirise-shop,Gallery\">\r\n\r\n    <mbr-parameters>\r\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\r\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\r\n        <input type=\"range\" title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"6\" inline>\r\n        <input type=\"range\" title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"6\" inline>\r\n        <input type=\"color\" title=\"Card Bg\" name=\"cardBg\" value=\"#a38dfd\">\r\n        <input type=\"color\" title=\"On Sale Bg\" name=\"saleBg\" value=\"#fe525b\">\r\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\">\r\n\r\n        <input type=\"shop\" title=\"Shop\" name=\"shop\">\r\n    <!-- End block parameters -->\r\n    </mbr-parameters>\r\n\r\n    <div mbr-class=\"{'container': !fullWidth}\">\r\n        <div mbr-shop=\"shop\" class=\"mbr-shop\"></div>\r\n    </div>\r\n\r\n</section>",
-          "_cid": "qyjXWpDhCp",
+          "_customHTML": "<section class=\"mbr-gallery\" group=\"Shops\" once=\"shops\" plugins=\"mobirise-shop,Gallery\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n        <input type=\"range\" title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"6\" inline>\n        <input type=\"range\" title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"6\" inline>\n        <input type=\"color\" title=\"Card Bg\" name=\"cardBg\" value=\"#a38dfd\">\n        <input type=\"color\" title=\"On Sale Bg\" name=\"saleBg\" value=\"#fe525b\">\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\">\n\n        <input type=\"shop\" title=\"Shop\" name=\"shop\" buttons=\"secondary\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div mbr-class=\"{'container': !fullWidth}\">\n        <div mbr-shop=\"shop\" class=\"mbr-shop\" sorting></div>\n    </div>\n\n</section>",
+          "_cid": "qyvDLnAhvA",
           "_protectedParams": [
             "shop__showSidebar",
             "shop__showCardButtons",
@@ -719,6 +722,1734 @@
             "sidebar2",
             "sidebar3",
             "shop__filtersTextStyle",
+            "buttons_default_class",
+            "filter_by_d",
+            "filter_by_pu",
+            "filter_by_pd",
+            "price_range",
+            "price_range_reset",
+            "shop"
+          ],
+          "_global": false,
+          "_once": "shops",
+          "_params": {
+            "shop__showSidebar": false,
+            "shop__showCardButtons": false,
+            "shop__showSortButtons": true,
+            "shop__showBestSellers": true,
+            "shop__showPriceRange": true,
+            "shop__showTags": true,
+            "text_all": "All",
+            "sidebar1": "Best Sellers",
+            "sidebar2": "Price Range",
+            "sidebar3": "Filter",
+            "shop__filtersTextStyle": "display-7",
+            "buttons_default_class": "secondary",
+            "filter_by_d": "<a class=\"btn btn-sm btn-secondary disableSortButton\" href=\"\">Default sorting</a>",
+            "filter_by_pu": "<a class=\"btn btn-sm btn-secondary-outline disableSortButton\" href=\"\">Price: low to high</a>",
+            "filter_by_pd": "<a class=\"btn btn-sm btn-secondary-outline disableSortButton\" href=\"\">Price: high to low</a>",
+            "price_range": "<a class=\"btn btn-sm btn-primary\" data-app-btn=\"true\" href=\"\">Filter</a>",
+            "price_range_reset": "<a class=\"btn btn-sm btn-secondary\" data-app-btn=\"true\" href=\"\">Show all</a>",
+            "shop": [
+              {
+                "tags": "Awesome",
+                "bestSeller": false,
+                "onSale": false,
+                "oldPrice": false,
+                "itemTitle": "Brown Glasses",
+                "itemDescription": "Casual shoes (contact us for sizing)<br><br><ul><li>Lightweight textured fabric</li> <li>Rounded v-neckline</li> <li>Pom pom trims</li> <li>Regular fit – true to size</li></ul> <br>Duis auctor hendrerit nisi, at lacinia ex vulputate quis. Suspendisse convallis iaculis tortor, quis mattis lectus rutrum a.<br><br> Product code: <b>385DDF5p</b>",
+                "itemPriceTitle": "From: ",
+                "itemPrice": "$10.00",
+                "oldPriceValue": "$20.00",
+                "sale": "-50%",
+                "button": "<a data-app-btn=\"true\" class=\"btn btn-secondary\" href=\"https://mobirise.com\">Buy now!</a>",
+                "image": "@PROJECT_PATH@/assets/images/shop0.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/shop0.jpg",
+                "customStyle5": "display-5",
+                "customStyle7": "display-7",
+                "caption": "Type caption here",
+                "active": true
+              },
+              {
+                "tags": "Wonderful",
+                "bestSeller": false,
+                "onSale": false,
+                "oldPrice": false,
+                "itemTitle": "Men's Shoes",
+                "itemDescription": "Casual shoes (contact us for sizing)<br><br><ul><li>Lightweight textured fabric</li> <li>Rounded v-neckline</li> <li>Pom pom trims</li> <li>Regular fit – true to size</li></ul> <br>Duis auctor hendrerit nisi, at lacinia ex vulputate quis. Suspendisse convallis iaculis tortor, quis mattis lectus rutrum a.<br><br> Product code: <b>385DDF5p</b>",
+                "itemPriceTitle": "From: ",
+                "itemPrice": "$10.00",
+                "oldPriceValue": "$20.00",
+                "sale": "-50%",
+                "button": "<a data-app-btn=\"true\" class=\"btn btn-secondary\" href=\"https://mobirise.com\">Buy now!</a>",
+                "image": "@PROJECT_PATH@/assets/images/shop1.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/shop1.jpg",
+                "customStyle5": "display-5",
+                "customStyle7": "display-7",
+                "caption": "Type caption here",
+                "active": false
+              },
+              {
+                "tags": "Creative",
+                "bestSeller": false,
+                "onSale": true,
+                "oldPrice": true,
+                "itemTitle": "Blue Backpack",
+                "itemDescription": "Casual shoes (contact us for sizing)<br><br><ul><li>Lightweight textured fabric</li> <li>Rounded v-neckline</li> <li>Pom pom trims</li> <li>Regular fit – true to size</li></ul> <br>Duis auctor hendrerit nisi, at lacinia ex vulputate quis. Suspendisse convallis iaculis tortor, quis mattis lectus rutrum a.<br><br> Product code: <b>385DDF5p</b>",
+                "itemPriceTitle": "From: ",
+                "itemPrice": "$10.00",
+                "oldPriceValue": "$20.00",
+                "sale": "-50%",
+                "button": "<a data-app-btn=\"true\" class=\"btn btn-secondary\" href=\"https://mobirise.com\">Buy now!</a>",
+                "image": "@PROJECT_PATH@/assets/images/shop2.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/shop2.jpg",
+                "customStyle5": "display-5",
+                "customStyle7": "display-7",
+                "caption": "Type caption here",
+                "active": false
+              },
+              {
+                "tags": "Awesome",
+                "bestSeller": false,
+                "onSale": false,
+                "oldPrice": false,
+                "itemTitle": "Red Snapback",
+                "itemDescription": "Casual shoes (contact us for sizing)<br><br><ul><li>Lightweight textured fabric</li> <li>Rounded v-neckline</li> <li>Pom pom trims</li> <li>Regular fit – true to size</li></ul> <br>Duis auctor hendrerit nisi, at lacinia ex vulputate quis. Suspendisse convallis iaculis tortor, quis mattis lectus rutrum a.<br><br> Product code: <b>385DDF5p</b>",
+                "itemPriceTitle": "From: ",
+                "itemPrice": "$10.00",
+                "oldPriceValue": "$20.00",
+                "sale": "-50%",
+                "button": "<a data-app-btn=\"true\" class=\"btn btn-secondary\" href=\"https://mobirise.com\">Buy now!</a>",
+                "image": "@PROJECT_PATH@/assets/images/shop3.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/shop3.jpg",
+                "customStyle5": "display-5",
+                "customStyle7": "display-7",
+                "caption": "Type caption here",
+                "active": false
+              },
+              {
+                "tags": "Responsive",
+                "bestSeller": false,
+                "onSale": false,
+                "oldPrice": false,
+                "itemTitle": "Black Glasses",
+                "itemDescription": "Casual shoes (contact us for sizing)<br><br><ul><li>Lightweight textured fabric</li> <li>Rounded v-neckline</li> <li>Pom pom trims</li> <li>Regular fit – true to size</li></ul> <br>Duis auctor hendrerit nisi, at lacinia ex vulputate quis. Suspendisse convallis iaculis tortor, quis mattis lectus rutrum a.<br><br> Product code: <b>385DDF5p</b>",
+                "itemPriceTitle": "From: ",
+                "itemPrice": "$10.00",
+                "oldPriceValue": "$20.00",
+                "sale": "-50%",
+                "button": "<a data-app-btn=\"true\" class=\"btn btn-secondary\" href=\"https://mobirise.com\">Buy now!</a>",
+                "image": "@PROJECT_PATH@/assets/images/shop4.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/shop4.jpg",
+                "customStyle5": "display-5",
+                "customStyle7": "display-7",
+                "caption": "Type caption here",
+                "active": false
+              },
+              {
+                "tags": "Creative",
+                "bestSeller": false,
+                "onSale": false,
+                "oldPrice": false,
+                "itemTitle": "Women's Shoes",
+                "itemDescription": "Casual shoes (contact us for sizing)<br><br><ul><li>Lightweight textured fabric</li> <li>Rounded v-neckline</li> <li>Pom pom trims</li> <li>Regular fit – true to size</li></ul> <br>Duis auctor hendrerit nisi, at lacinia ex vulputate quis. Suspendisse convallis iaculis tortor, quis mattis lectus rutrum a.<br><br> Product code: <b>385DDF5p</b>",
+                "itemPriceTitle": "From: ",
+                "itemPrice": "$10.00",
+                "oldPriceValue": "$20.00",
+                "sale": "-50%",
+                "button": "<a data-app-btn=\"true\" class=\"btn btn-secondary\" href=\"https://mobirise.com\">Buy now!</a>",
+                "image": "@PROJECT_PATH@/assets/images/shop5.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/shop5.jpg",
+                "customStyle5": "display-5",
+                "customStyle7": "display-7",
+                "caption": "Type caption here",
+                "active": false
+              },
+              {
+                "tags": "Animated",
+                "bestSeller": false,
+                "onSale": false,
+                "oldPrice": false,
+                "itemTitle": "Pink Backpack",
+                "itemDescription": "Casual shoes (contact us for sizing)<br><br><ul><li>Lightweight textured fabric</li> <li>Rounded v-neckline</li> <li>Pom pom trims</li> <li>Regular fit – true to size</li></ul> <br>Duis auctor hendrerit nisi, at lacinia ex vulputate quis. Suspendisse convallis iaculis tortor, quis mattis lectus rutrum a.<br><br> Product code: <b>385DDF5p</b>",
+                "itemPriceTitle": "From: ",
+                "itemPrice": "$10.00",
+                "oldPriceValue": "$20.00",
+                "sale": "-50%",
+                "button": "<a data-app-btn=\"true\" class=\"btn btn-secondary\" href=\"https://mobirise.com\">Buy now!</a>",
+                "image": "@PROJECT_PATH@/assets/images/shop6.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/shop6.jpg",
+                "customStyle5": "display-5",
+                "customStyle7": "display-7",
+                "caption": "Type caption here",
+                "active": false
+              },
+              {
+                "tags": "Awesome",
+                "bestSeller": false,
+                "onSale": false,
+                "oldPrice": false,
+                "itemTitle": "Red Cap",
+                "itemDescription": "Casual shoes (contact us for sizing)<br><br><ul><li>Lightweight textured fabric</li> <li>Rounded v-neckline</li> <li>Pom pom trims</li> <li>Regular fit – true to size</li></ul> <br>Duis auctor hendrerit nisi, at lacinia ex vulputate quis. Suspendisse convallis iaculis tortor, quis mattis lectus rutrum a.<br><br> Product code: <b>385DDF5p</b>",
+                "itemPriceTitle": "From: ",
+                "itemPrice": "$10.00",
+                "oldPriceValue": "$20.00",
+                "sale": "-50%",
+                "button": "<a data-app-btn=\"true\" class=\"btn btn-secondary\" href=\"https://mobirise.com\">Buy now!</a>",
+                "image": "@PROJECT_PATH@/assets/images/shop7.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/shop7.jpg",
+                "customStyle5": "display-5",
+                "customStyle7": "display-7",
+                "caption": "Type caption here",
+                "active": false
+              }
+            ]
+          },
+          "_anchor": "shop6-16"
+        },
+        {
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor",
+            ".mbr-shop": {
+              "display": "table",
+              "width": "100%"
+            },
+            ".mbr-shop .row": {
+              "margin": "0"
+            },
+            ".mbr-shop .btn-sm": {
+              "margin": "0.2rem 0.2rem"
+            },
+            ".mbr-shop .shoppingcart-icons": {
+              "z-index": "105 !important"
+            },
+            ".mbr-shop .shop-title": {
+              "margin-bottom": "18px",
+              "padding-left": "25px",
+              "padding-right": "25px",
+              "display": "inline-block",
+              "max-width": "80%"
+            },
+            ".mbr-shop .sidebar-title": {
+              "line-height": "25px"
+            },
+            ".mbr-shop .shopItemsModal_wraper": {
+              "position": "fixed",
+              "display": "none",
+              "align-items": "center",
+              "justify-content": "center",
+              "width": "100%",
+              "height": "100%",
+              "background-color": "rgba(87, 87, 87, 0.4)",
+              "top": "0",
+              "cursor": "pointer",
+              "z-index": "1040"
+            },
+            ".mbr-shop .card-description": {
+              "cursor": "text",
+              "display": "none"
+            },
+            ".mbr-shop .image-modal": {
+              "padding-left": "0",
+              "padding-right": "0",
+              "text-align": "center"
+            },
+            ".mbr-shop .image-modal img": {
+              "max-width": "100%",
+              "max-height": "75vh"
+            },
+            ".mbr-shop .hide-modal": {
+              "display": "none"
+            },
+            ".mbr-shop .shopItemsModal": {
+              "cursor": "default",
+              "padding": "50px",
+              "width": "1000px",
+              "max-width": "100%",
+              "background-color": "#ffffff",
+              "z-index": "2000",
+              "overflow": "auto",
+              "position": "fixed"
+            },
+            ".mbr-shop .shopItemsModal p": {
+              "margin-bottom": "0"
+            },
+            ".mbr-shop .shopItemsModal ul": {
+              "margin-bottom": "0"
+            },
+            ".mbr-shop .shopItemsModal .card-description": {
+              "display": "block",
+              "width": "100%"
+            },
+            ".mbr-shop .shopItemsModal .close-modal": {
+              "content": "''",
+              "position": "absolute",
+              "top": "0",
+              "right": "0",
+              "width": "50px",
+              "height": "4px",
+              "background-color": "red",
+              "transform": "rotate(45deg)",
+              "-webkit-transform": "rotate(45deg)"
+            },
+            ".mbr-shop .shopItemsModal .close-modal:before": {
+              "content": "''",
+              "position": "absolute",
+              "top": "0",
+              "right": "0",
+              "width": "50px",
+              "height": "4px",
+              "background-color": "red",
+              "transform": "rotate(-45deg)",
+              "-webkit-transform": "rotate(-45deg)"
+            },
+            ".mbr-shop .test-overlay": {
+              "position": "absolute",
+              "width": "100%",
+              "height": "100%",
+              "background-color": "rgba(0, 0, 0, 0.5)"
+            },
+            ".mbr-shop .filter-by-pu, .mbr-shop .filter-by-pd, .mbr-shop .filter-by-d": {
+              "display": "inline-block",
+              "margin-right": "3px"
+            },
+            ".mbr-shop .sort-buttons": {
+              "padding-bottom": "1rem",
+              "margin-right": "13px",
+              "text-align": "right"
+            },
+            ".mbr-shop .galleryItem:before": {
+              "width": "0 !important",
+              "height": "0 !important"
+            },
+            ".mbr-shop .modal-dialog": {
+              "max-width": "700px"
+            },
+            ".mbr-shop .mbr-gallery-item": {
+              "left": "0 !important",
+              "top": "0 !important",
+              "vertical-align": "top",
+              "position": "relative !important",
+              "transform": "none !important",
+              "padding": "10px"
+            },
+            ".mbr-shop .galleryItem h4, .mbr-shop .carousel-item h4": {
+              "font-style": "normal",
+              "line-height": "1",
+              "text-transform": "none",
+              "letter-spacing": "-1px",
+              "word-spacing": "0",
+              "margin-bottom": "0.3rem",
+              "padding-top": "15px",
+              "transition": "color 0.5s"
+            },
+            ".mbr-shop .galleryItem h5, .mbr-shop .carousel-item h5": {
+              "font-style": "italic",
+              "font-weight": "400",
+              "line-height": "22.36px",
+              "text-transform": "none",
+              "letter-spacing": "0px",
+              "word-spacing": "0"
+            },
+            ".mbr-shop .galleryItem p, .mbr-shop .carousel-item p": {
+              "font-style": "italic",
+              "font-weight": "400",
+              "text-transform": "none",
+              "letter-spacing": "0px",
+              "word-spacing": "0px",
+              "text-align": "center",
+              "display": "inline"
+            },
+            ".mbr-shop .item-button": {
+              "text-align": "center"
+            },
+            ".mbr-shop .modalButton": {
+              "display": "inline-block",
+              "float": "right",
+              "margin-right": "10px"
+            },
+            ".mbr-shop .modalButton.btn-success": {
+              "right": "15%"
+            },
+            ".mbr-shop .sidebar": {
+              "margin-top": "30px",
+              "position": "relative"
+            },
+            ".mbr-shop .sidebar-block": {
+              "position": "relative"
+            },
+            ".mbr-shop .sidebar-background:after": {
+              "content": "''",
+              "position": "absolute",
+              "width": "100%",
+              "height": "102%",
+              "background-color": "rgba(0, 0, 0, 0.05)",
+              "top": "-20px",
+              "right": "3px"
+            },
+            ".mbr-shop .bestsellers": {
+              "padding-left": "0",
+              "padding-right": "0",
+              "position": "relative",
+              "margin-bottom": "20px"
+            },
+            ".mbr-shop .bestsellers .onsale": {
+              "top": "-15px"
+            },
+            ".mbr-shop .bestsellers .price-block": {
+              "padding-top": "5px",
+              "text-align": "left",
+              "line-height": "1"
+            },
+            ".mbr-shop .bestsellers .mbr-gallery-item": {
+              "width": "100%"
+            },
+            ".mbr-shop .bestsellers .mbr-gallery-item img": {
+              "width": "80px",
+              "float": "left",
+              "margin-right": "20px"
+            },
+            ".mbr-shop .bestsellers .mbr-gallery-item h4": {
+              "text-align": "left",
+              "padding-bottom": "5px",
+              "line-height": "1",
+              "border-bottom": "1px dotted #d6d6d6"
+            },
+            ".mbr-shop .bestsellers .mbr-gallery-item h5": {
+              "text-align": "left",
+              "display": "none"
+            },
+            ".mbr-shop .bestsellers .mbr-gallery-item p": {
+              "text-align": "left"
+            },
+            ".mbr-shop .bestsellers .btn": {
+              "display": "none"
+            },
+            ".mbr-shop .bestsellers-img": {
+              "display": "inline-block",
+              "width": "80px",
+              "height": "80px",
+              "overflow": "hidden"
+            },
+            ".mbr-shop .bestsellers-title": {
+              "display": "inline-block"
+            },
+            ".mbr-shop .onsale": {
+              "position": "absolute",
+              "top": "5px",
+              "right": "5px",
+              "display": "block",
+              "transition": "color .3s ease",
+              "text-align": "center",
+              "z-index": "100",
+              "height": "30px",
+              "line-height": "30px",
+              "padding": "0 15px",
+              "background": "@saleBg",
+              "color": "contrast(@saleBg)",
+              "border-radius": "30px",
+              "font-weight": "400",
+              "font-style": "normal",
+              "text-transform": "none",
+              "letter-spacing": "0px"
+            },
+            ".mbr-shop .mbr-gallery-item__hided": {
+              "display": "none"
+            },
+            ".mbr-shop .mbr-gallery-item__hided h4, .mbr-shop .mbr-gallery-item__hided h5, .mbr-shop .mbr-gallery-item__hided p": {
+              "display": "none"
+            },
+            ".mbr-shop .mbr-gallery-item__hided .btn": {
+              "display": "none"
+            },
+            ".mbr-shop .galleryItem .price-block": {
+              "display": "block",
+              "margin-bottom": "8px"
+            },
+            ".mbr-shop .galleryItem .price-block span": {
+              "font-style": "normal",
+              "font-weight": "700",
+              "line-height": "1",
+              "text-transform": "none",
+              "letter-spacing": "-1px",
+              "word-spacing": "0"
+            },
+            ".mbr-shop .mbr-gallery-filter": {
+              "padding-left": "0",
+              "text-align": "left",
+              "padding-top": "0"
+            },
+            ".mbr-shop .mbr-gallery-filter ul li": {
+              "position": "relative",
+              "padding": "7px 0 7px 25px",
+              "border-bottom": "1px dotted #d6d6d6",
+              "margin": "0",
+              "font-style": "normal",
+              "font-weight": "400",
+              "line-height": "24.99px",
+              "text-transform": "none",
+              "letter-spacing": "0px",
+              "word-spacing": "0",
+              "direction": "ltr",
+              "border": "none",
+              "display": "list-item",
+              "text-align": "left",
+              "transition": "all 0.3s ease-out",
+              "cursor": "pointer"
+            },
+            ".mbr-shop .mbr-gallery-filter ul li.active": {
+              "background-color": "transparent",
+              "font-weight": "bold"
+            },
+            ".mbr-shop .mbr-gallery-filter ul li:before": {
+              "content": "\"\"",
+              "position": "absolute",
+              "left": "0",
+              "top": "50%",
+              "margin-top": "-2.5px",
+              "background": "rgba(0, 0, 0, 0.3)",
+              "width": "5px",
+              "height": "5px"
+            },
+            ".mbr-shop .mbr-gallery-filter ul li:hover": {
+              "padding-left": "30px",
+              "background-color": "transparent"
+            },
+            ".mbr-shop .range-slider": {
+              "padding-bottom": "25px"
+            },
+            ".mbr-shop .filter-cost": {
+              "display": "block",
+              "vertical-align": "middle",
+              "max-width": "250px",
+              "text-align": "left",
+              "position": "relative",
+              "margin-bottom": "30px"
+            },
+            ".mbr-shop .filter-cost p": {
+              "margin-bottom": "10px",
+              "font-size": "16px",
+              "line-height": "21px",
+              "color": "#666666",
+              "font-weight": "bold"
+            },
+            ".mbr-shop .price-controls": {
+              "position": "relative",
+              "height": "36px",
+              "margin-bottom": "30px",
+              "border": "2px solid #666666",
+              "border-radius": "2px",
+              "font-size": "0"
+            },
+            ".mbr-shop .price-controls label": {
+              "display": "inline-block",
+              "width": "50%",
+              "font-size": "14px",
+              "line-height": "32px",
+              "color": "#666666",
+              "font-weight": "normal",
+              "cursor": "pointer",
+              "margin-bottom": "0"
+            },
+            ".mbr-shop .price-controls label.min-price": {
+              "border-right": "2px solid #666666"
+            },
+            ".mbr-shop .price-controls input": {
+              "width": "100%",
+              "background-color": "#ffffff",
+              "border": "none",
+              "line-height": "31px",
+              "height": "31px",
+              "text-align": "center",
+              "-webkit-user-select": "none",
+              "user-select": "none"
+            },
+            ".mbr-shop .range-controls": {
+              "position": "relative"
+            },
+            ".mbr-shop .range-controls .scale": {
+              "width": "100%",
+              "height": "2px",
+              "background-color": "rgba(190, 190, 190, 0.3)"
+            },
+            ".mbr-shop .range-controls .bar": {
+              "margin-left": "0",
+              "width": "100%",
+              "height": "2px",
+              "background-color": "#666666"
+            },
+            ".mbr-shop .toggle": {
+              "position": "absolute",
+              "top": "-9px",
+              "width": "4px",
+              "height": "4px",
+              "border": "8px solid #666666",
+              "border-radius": "100%",
+              "box-sizing": "content-box",
+              "background-color": "#ababab",
+              "cursor": "pointer"
+            },
+            ".mbr-shop .toggle:hover, .mbr-shop .toggle:active": {
+              "background-color": "#c0a375"
+            },
+            ".mbr-shop .min-toggle": {
+              "left": "0"
+            },
+            ".mbr-shop .max-toggle": {
+              "right": "0"
+            },
+            ".mbr-shop .hided-by-price": {
+              "display": "none"
+            },
+            ".mbr-shop .text-modal": {
+              "padding-right": "30px",
+              "padding-left": "30px"
+            },
+            ".mbr-shop .text-modal .item-button": {
+              "text-align": "left !important"
+            },
+            ".mbr-shop .text-modal .price-block": {
+              "line-height": "1",
+              "border-bottom": "1px dotted #d6d6d6"
+            },
+            ".mbr-shop .text-modal .price-block p": {
+              "display": "inline"
+            },
+            ".mbr-shop .text-modal .price-block span": {
+              "display": "inline-block",
+              "font-weight": "700",
+              "padding": "10px 0 20px 0"
+            },
+            ".mbr-shop .text-modal .card-description": {
+              "padding-top": "20px",
+              "display": "block",
+              "font-size": "16px",
+              "line-height": "24px",
+              "margin-bottom": "50px"
+            },
+            ".mbr-shop .modal-control-panel": {
+              "padding-right": "0"
+            },
+            ".mbr-shop .modal-cb": {
+              "display": "inline-block",
+              "float": "right",
+              "margin-right": "10px",
+              "margin-left": "10px"
+            },
+            ".mbr-shop .shopItemsModalBg": {
+              "width": "100%",
+              "height": "100%"
+            },
+            ".mbr-shop .close-modal-wrapper": {
+              "cursor": "pointer",
+              "width": "40px",
+              "height": "40px",
+              "position": "absolute",
+              "top": "0",
+              "right": "0"
+            },
+            ".mbr-shop .close-modal-wrapper:after": {
+              "content": "\"\"",
+              "position": "absolute",
+              "width": "40px",
+              "height": "3px",
+              "background-color": "#cccccc",
+              "top": "50%",
+              "right": "5%",
+              "transform": "rotate(-45deg)",
+              "-webkit-transform": "rotate(-45deg)"
+            },
+            ".mbr-shop .close-modal-wrapper:before": {
+              "content": "\"\"",
+              "position": "absolute",
+              "width": "3px",
+              "height": "40px",
+              "background-color": "#cccccc",
+              "right": "50%",
+              "top": "5%",
+              "transform": "rotate(-45deg)",
+              "-webkit-transform": "rotate(-45deg)"
+            },
+            ".mbr-shop .closeModal": {
+              "position": "absolute",
+              "top": "0",
+              "right": "0"
+            },
+            ".mbr-shop .galleryItem .sidebar_wraper": {
+              "text-align": "center"
+            },
+            ".mbr-shop .shopItemsModal .sidebar_wraper": {
+              "text-align": "left"
+            },
+            ".mbr-shop .shopItemsModal .onsale": {
+              "top": "10px",
+              "right": "10px",
+              "border": "1px solid #e7e7e7"
+            },
+            ".mbr-shop .shop-items .onsale, .mbr-shop .bestseller-block .onsale": {
+              "font-size": "15px !important"
+            },
+            ".mbr-shop .item_overlay": {
+              "position": "absolute",
+              "width": "100%",
+              "height": "100%",
+              "z-index": "99",
+              "background": "transparent"
+            },
+            ".mbr-shop .style_overlay": {
+              "position": "absolute",
+              "width": "100%",
+              "height": "100%"
+            },
+            ".mbr-shop .price-range": {
+              "display": "inline-block"
+            },
+            ".mbr-shop .price-range-reset": {
+              "display": "inline-block"
+            },
+            ".mbr-shop .bestsellers .item-button": {
+              "display": "none !important"
+            },
+            ".mbr-shop .range-slider h4": {
+              "margin-bottom": "15px"
+            },
+            ".mbr-shop .mbr-gallery-filter ul": {
+              "padding-left": "0px",
+              "display": "inline-block",
+              "list-style": "none",
+              "margin-bottom": "0px"
+            },
+            ".mbr-shop .categories:after": {
+              "content": "\"\"",
+              "display": "table",
+              "clear": "both"
+            },
+            "@media (min-width: 767px) and (max-width: 1100px)": {
+              ".mbr-shop .col-md-9": {
+                "width": "100%"
+              },
+              ".mbr-shop .col-md-3": {
+                "width": "100%"
+              },
+              ".mbr-shop .sidebar-background:after": {
+                "top": "0"
+              },
+              ".mbr-shop .bestseller-block": {
+                "width": "100%",
+                "margin": "0",
+                "display": "inline-block",
+                "float": "left",
+                "padding-top": "15px"
+              },
+              ".mbr-shop .range-slider": {
+                "width": "49%",
+                "margin": "0",
+                "display": "inline-block",
+                "float": "right",
+                "padding-top": "15px"
+              },
+              ".mbr-shop .bestsellers": {
+                "width": "100%"
+              },
+              ".mbr-shop .bestsellers .mbr-gallery-item": {
+                "width": "49%",
+                "display": "inline-block"
+              },
+              ".mbr-shop .sidebar-categories": {
+                "width": "49%",
+                "margin": "0",
+                "display": "inline-block",
+                "padding-top": "15px"
+              },
+              ".mbr-shop .price-range": {
+                "max-width": "250px",
+                "text-align": "center"
+              },
+              ".clearfix:after": {
+                "content": "\"\"",
+                "display": "table",
+                "clear": "both"
+              }
+            },
+            "@media (max-width: 991px) and (min-width: 768px)": {
+              ".mbr-shop .mbr-gallery-item": {
+                "width": "33%"
+              }
+            },
+            "@media (max-width: 500px)": {
+              ".mbr-shop .shopItemsModal": {
+                "padding": "50px 10px 10px 10px"
+              },
+              ".mbr-shop .shop-title": {
+                "max-width": "100%"
+              },
+              ".mbr-shop .mbr-gallery-item": {
+                "width": "100%"
+              }
+            },
+            "@media (max-width: 1200px)": {
+              ".mbr-shop .sort-buttons": {
+                "text-align": "center",
+                "margin-right": "0 !important"
+              }
+            },
+            "@media (max-width: 767px)": {
+              ".mbr-shop .image-modal": {
+                "text-align": "center"
+              },
+              ".mbr-shop .image-modal img": {
+                "max-height": "50vh",
+                "width": "auto",
+                "max-width": "100%"
+              },
+              ".mbr-shop .shopItemsModal": {
+                "top": "15%",
+                "bottom": "70px",
+                "left": "10%",
+                "width": "80%"
+              },
+              ".mbr-shop .shopItemsModal .image-modal": {
+                "padding-right": "0"
+              },
+              ".mbr-shop .sidebar-background:after": {
+                "top": "-1%"
+              }
+            },
+            "@media (max-width: 1100px)": {
+              ".mbr-shop .shopItemsModal": {
+                "max-height": "85vh",
+                "width": "90%",
+                "left": "5%",
+                "margin-left": "0"
+              },
+              ".mbr-shop .sort-buttons": {
+                "margin-right": "21px"
+              },
+              ".mbr-shop .sidebar-background:after": {
+                "right": "0",
+                "width": "100%"
+              },
+              ".mbr-shop .text-modal .card-description": {
+                "width": "100%"
+              },
+              ".mbr-shop .text-modal .price-block": {
+                "width": "100%"
+              },
+              ".mbr-shop .text-modal h4": {
+                "padding-top": "30px"
+              }
+            },
+            ".shopItemsModal_wraper .mbr-section-btn": {
+              "display": "block !important"
+            },
+            ".range-slider .mbr-section-btn": {
+              "margin": "0"
+            },
+            ".oldprice": {
+              "color": "#767676",
+              "padding-left": ".8rem",
+              "text-decoration": "line-through"
+            },
+            ".mbr-gallery-item": {
+              ".sidebar_wraper": {
+                ".mbr-section-btn": {
+                  "text-align": "left"
+                },
+                ".item-title": {
+                  "text-align": "left",
+                  "padding-bottom": ".5rem"
+                },
+                ".item-subtitle": {
+                  "text-align": "left"
+                },
+                ".price-block": {
+                  "text-align": "left"
+                }
+              }
+            }
+          },
+          "_name": "shop6",
+          "_customHTML": "<section class=\"mbr-gallery\" group=\"Shops\" once=\"shops\" plugins=\"mobirise-shop,Gallery\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n        <input type=\"range\" title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"6\" inline>\n        <input type=\"range\" title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"6\" inline>\n        <input type=\"color\" title=\"Card Bg\" name=\"cardBg\" value=\"#a38dfd\">\n        <input type=\"color\" title=\"On Sale Bg\" name=\"saleBg\" value=\"#fe525b\">\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\">\n\n        <input type=\"shop\" title=\"Shop\" name=\"shop\" buttons=\"secondary\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div mbr-class=\"{'container': !fullWidth}\">\n        <div mbr-shop=\"shop\" class=\"mbr-shop\" sorting shop__showsidebar=\"\"></div>\n    </div>\n\n</section>",
+          "_cid": "qyvDMHp1TT",
+          "_protectedParams": [
+            "shop__showSidebar",
+            "shop__showCardButtons",
+            "shop__showSortButtons",
+            "shop__showBestSellers",
+            "shop__showPriceRange",
+            "shop__showTags",
+            "text_all",
+            "sidebar1",
+            "sidebar2",
+            "sidebar3",
+            "shop__filtersTextStyle",
+            "buttons_default_class",
+            "filter_by_d",
+            "filter_by_pu",
+            "filter_by_pd",
+            "price_range",
+            "price_range_reset",
+            "shop"
+          ],
+          "_global": false,
+          "_once": "shops",
+          "_params": {
+            "shop__showSidebar": true,
+            "shop__showCardButtons": false,
+            "shop__showSortButtons": true,
+            "shop__showBestSellers": true,
+            "shop__showPriceRange": true,
+            "shop__showTags": true,
+            "text_all": "All",
+            "sidebar1": "Best Sellers",
+            "sidebar2": "Price Range",
+            "sidebar3": "Filter",
+            "shop__filtersTextStyle": "display-7",
+            "buttons_default_class": "secondary",
+            "filter_by_d": "<a class=\"btn btn-sm btn-secondary disableSortButton\" href=\"\">Default sorting</a>",
+            "filter_by_pu": "<a class=\"btn btn-sm btn-secondary-outline disableSortButton\" href=\"\">Price: low to high</a>",
+            "filter_by_pd": "<a class=\"btn btn-sm btn-secondary-outline disableSortButton\" href=\"\">Price: high to low</a>",
+            "price_range": "<a class=\"btn btn-sm btn-primary\" data-app-btn=\"true\" href=\"\">Filter</a>",
+            "price_range_reset": "<a class=\"btn btn-sm btn-secondary\" data-app-btn=\"true\" href=\"\">Show all</a>",
+            "shop": [
+              {
+                "tags": "Awesome",
+                "bestSeller": false,
+                "onSale": false,
+                "oldPrice": false,
+                "itemTitle": "Brown Glasses",
+                "itemDescription": "Casual shoes (contact us for sizing)<br><br><ul><li>Lightweight textured fabric</li> <li>Rounded v-neckline</li> <li>Pom pom trims</li> <li>Regular fit – true to size</li></ul> <br>Duis auctor hendrerit nisi, at lacinia ex vulputate quis. Suspendisse convallis iaculis tortor, quis mattis lectus rutrum a.<br><br> Product code: <b>385DDF5p</b>",
+                "itemPriceTitle": "From: ",
+                "itemPrice": "$10.00",
+                "oldPriceValue": "$20.00",
+                "sale": "-50%",
+                "button": "<a data-app-btn=\"true\" class=\"btn btn-secondary\" href=\"https://mobirise.com\">Buy now!</a>",
+                "image": "@PROJECT_PATH@/assets/images/shop0.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/shop0.jpg",
+                "customStyle5": "display-5",
+                "customStyle7": "display-7",
+                "caption": "Type caption here",
+                "active": true
+              },
+              {
+                "tags": "Wonderful",
+                "bestSeller": false,
+                "onSale": false,
+                "oldPrice": false,
+                "itemTitle": "Men's Shoes",
+                "itemDescription": "Casual shoes (contact us for sizing)<br><br><ul><li>Lightweight textured fabric</li> <li>Rounded v-neckline</li> <li>Pom pom trims</li> <li>Regular fit – true to size</li></ul> <br>Duis auctor hendrerit nisi, at lacinia ex vulputate quis. Suspendisse convallis iaculis tortor, quis mattis lectus rutrum a.<br><br> Product code: <b>385DDF5p</b>",
+                "itemPriceTitle": "From: ",
+                "itemPrice": "$10.00",
+                "oldPriceValue": "$20.00",
+                "sale": "-50%",
+                "button": "<a data-app-btn=\"true\" class=\"btn btn-secondary\" href=\"https://mobirise.com\">Buy now!</a>",
+                "image": "@PROJECT_PATH@/assets/images/shop1.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/shop1.jpg",
+                "customStyle5": "display-5",
+                "customStyle7": "display-7",
+                "caption": "Type caption here",
+                "active": false
+              },
+              {
+                "tags": "Creative",
+                "bestSeller": false,
+                "onSale": true,
+                "oldPrice": true,
+                "itemTitle": "Blue Backpack",
+                "itemDescription": "Casual shoes (contact us for sizing)<br><br><ul><li>Lightweight textured fabric</li> <li>Rounded v-neckline</li> <li>Pom pom trims</li> <li>Regular fit – true to size</li></ul> <br>Duis auctor hendrerit nisi, at lacinia ex vulputate quis. Suspendisse convallis iaculis tortor, quis mattis lectus rutrum a.<br><br> Product code: <b>385DDF5p</b>",
+                "itemPriceTitle": "From: ",
+                "itemPrice": "$10.00",
+                "oldPriceValue": "$20.00",
+                "sale": "-50%",
+                "button": "<a data-app-btn=\"true\" class=\"btn btn-secondary\" href=\"https://mobirise.com\">Buy now!</a>",
+                "image": "@PROJECT_PATH@/assets/images/shop2.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/shop2.jpg",
+                "customStyle5": "display-5",
+                "customStyle7": "display-7",
+                "caption": "Type caption here",
+                "active": false
+              },
+              {
+                "tags": "Awesome",
+                "bestSeller": false,
+                "onSale": false,
+                "oldPrice": false,
+                "itemTitle": "Red Snapback",
+                "itemDescription": "Casual shoes (contact us for sizing)<br><br><ul><li>Lightweight textured fabric</li> <li>Rounded v-neckline</li> <li>Pom pom trims</li> <li>Regular fit – true to size</li></ul> <br>Duis auctor hendrerit nisi, at lacinia ex vulputate quis. Suspendisse convallis iaculis tortor, quis mattis lectus rutrum a.<br><br> Product code: <b>385DDF5p</b>",
+                "itemPriceTitle": "From: ",
+                "itemPrice": "$10.00",
+                "oldPriceValue": "$20.00",
+                "sale": "-50%",
+                "button": "<a data-app-btn=\"true\" href=\"https://mobirise.com\" class=\"btn btn-secondary display-7\">Buy now!</a>",
+                "image": "@PROJECT_PATH@/assets/images/shop3.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/shop3.jpg",
+                "customStyle5": "display-5",
+                "customStyle7": "display-7",
+                "caption": "Type caption here",
+                "active": false,
+                "onsale": "-50%"
+              },
+              {
+                "tags": "Responsive",
+                "bestSeller": false,
+                "onSale": false,
+                "oldPrice": false,
+                "itemTitle": "Black Glasses",
+                "itemDescription": "Casual shoes (contact us for sizing)<br><br><ul><li>Lightweight textured fabric</li> <li>Rounded v-neckline</li> <li>Pom pom trims</li> <li>Regular fit – true to size</li></ul> <br>Duis auctor hendrerit nisi, at lacinia ex vulputate quis. Suspendisse convallis iaculis tortor, quis mattis lectus rutrum a.<br><br> Product code: <b>385DDF5p</b>",
+                "itemPriceTitle": "From: ",
+                "itemPrice": "$10.00",
+                "oldPriceValue": "$20.00",
+                "sale": "-50%",
+                "button": "<a data-app-btn=\"true\" class=\"btn btn-secondary\" href=\"https://mobirise.com\">Buy now!</a>",
+                "image": "@PROJECT_PATH@/assets/images/shop4.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/shop4.jpg",
+                "customStyle5": "display-5",
+                "customStyle7": "display-7",
+                "caption": "Type caption here",
+                "active": false
+              },
+              {
+                "tags": "Creative",
+                "bestSeller": false,
+                "onSale": false,
+                "oldPrice": false,
+                "itemTitle": "Women's Shoes",
+                "itemDescription": "Casual shoes (contact us for sizing)<br><br><ul><li>Lightweight textured fabric</li> <li>Rounded v-neckline</li> <li>Pom pom trims</li> <li>Regular fit – true to size</li></ul> <br>Duis auctor hendrerit nisi, at lacinia ex vulputate quis. Suspendisse convallis iaculis tortor, quis mattis lectus rutrum a.<br><br> Product code: <b>385DDF5p</b>",
+                "itemPriceTitle": "From: ",
+                "itemPrice": "$10.00",
+                "oldPriceValue": "$20.00",
+                "sale": "-50%",
+                "button": "<a data-app-btn=\"true\" class=\"btn btn-secondary\" href=\"https://mobirise.com\">Buy now!</a>",
+                "image": "@PROJECT_PATH@/assets/images/shop5.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/shop5.jpg",
+                "customStyle5": "display-5",
+                "customStyle7": "display-7",
+                "caption": "Type caption here",
+                "active": false
+              },
+              {
+                "tags": "Animated",
+                "bestSeller": false,
+                "onSale": false,
+                "oldPrice": false,
+                "itemTitle": "Pink Backpack",
+                "itemDescription": "Casual shoes (contact us for sizing)<br><br><ul><li>Lightweight textured fabric</li> <li>Rounded v-neckline</li> <li>Pom pom trims</li> <li>Regular fit – true to size</li></ul> <br>Duis auctor hendrerit nisi, at lacinia ex vulputate quis. Suspendisse convallis iaculis tortor, quis mattis lectus rutrum a.<br><br> Product code: <b>385DDF5p</b>",
+                "itemPriceTitle": "From: ",
+                "itemPrice": "$10.00",
+                "oldPriceValue": "$20.00",
+                "sale": "-50%",
+                "button": "<a data-app-btn=\"true\" class=\"btn btn-secondary\" href=\"https://mobirise.com\">Buy now!</a>",
+                "image": "@PROJECT_PATH@/assets/images/shop6.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/shop6.jpg",
+                "customStyle5": "display-5",
+                "customStyle7": "display-7",
+                "caption": "Type caption here",
+                "active": false
+              },
+              {
+                "tags": "Awesome",
+                "bestSeller": false,
+                "onSale": false,
+                "oldPrice": false,
+                "itemTitle": "Red Cap",
+                "itemDescription": "Casual shoes (contact us for sizing)<br><br><ul><li>Lightweight textured fabric</li> <li>Rounded v-neckline</li> <li>Pom pom trims</li> <li>Regular fit – true to size</li></ul> <br>Duis auctor hendrerit nisi, at lacinia ex vulputate quis. Suspendisse convallis iaculis tortor, quis mattis lectus rutrum a.<br><br> Product code: <b>385DDF5p</b>",
+                "itemPriceTitle": "From: ",
+                "itemPrice": "$10.00",
+                "oldPriceValue": "$20.00",
+                "sale": "-50%",
+                "button": "<a data-app-btn=\"true\" class=\"btn btn-secondary\" href=\"https://mobirise.com\">Buy now!</a>",
+                "image": "@PROJECT_PATH@/assets/images/shop7.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/shop7.jpg",
+                "customStyle5": "display-5",
+                "customStyle7": "display-7",
+                "caption": "Type caption here",
+                "active": false
+              }
+            ]
+          },
+          "_anchor": "shop6-17"
+        },
+        {
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor",
+            ".mbr-shop": {
+              "display": "table",
+              "width": "100%"
+            },
+            ".mbr-shop .row": {
+              "margin": "0"
+            },
+            ".mbr-shop .btn-sm": {
+              "margin": "0.2rem 0.2rem"
+            },
+            ".mbr-shop .shoppingcart-icons": {
+              "z-index": "105 !important"
+            },
+            ".mbr-shop .shop-title": {
+              "margin-bottom": "18px",
+              "padding-left": "25px",
+              "padding-right": "25px",
+              "display": "inline-block",
+              "max-width": "80%"
+            },
+            ".mbr-shop .sidebar-title": {
+              "line-height": "25px"
+            },
+            ".mbr-shop .shopItemsModal_wraper": {
+              "position": "fixed",
+              "display": "none",
+              "align-items": "center",
+              "justify-content": "center",
+              "width": "100%",
+              "height": "100%",
+              "background-color": "rgba(87, 87, 87, 0.4)",
+              "top": "0",
+              "cursor": "pointer",
+              "z-index": "1040"
+            },
+            ".mbr-shop .card-description": {
+              "cursor": "text",
+              "display": "none"
+            },
+            ".mbr-shop .image-modal": {
+              "padding-left": "0",
+              "padding-right": "0",
+              "text-align": "center"
+            },
+            ".mbr-shop .image-modal img": {
+              "max-width": "100%",
+              "max-height": "75vh"
+            },
+            ".mbr-shop .hide-modal": {
+              "display": "none"
+            },
+            ".mbr-shop .shopItemsModal": {
+              "cursor": "default",
+              "padding": "50px",
+              "width": "1000px",
+              "max-width": "100%",
+              "background-color": "#ffffff",
+              "z-index": "2000",
+              "overflow": "auto",
+              "position": "fixed"
+            },
+            ".mbr-shop .shopItemsModal p": {
+              "margin-bottom": "0"
+            },
+            ".mbr-shop .shopItemsModal ul": {
+              "margin-bottom": "0"
+            },
+            ".mbr-shop .shopItemsModal .card-description": {
+              "display": "block",
+              "width": "100%"
+            },
+            ".mbr-shop .shopItemsModal .close-modal": {
+              "content": "''",
+              "position": "absolute",
+              "top": "0",
+              "right": "0",
+              "width": "50px",
+              "height": "4px",
+              "background-color": "red",
+              "transform": "rotate(45deg)",
+              "-webkit-transform": "rotate(45deg)"
+            },
+            ".mbr-shop .shopItemsModal .close-modal:before": {
+              "content": "''",
+              "position": "absolute",
+              "top": "0",
+              "right": "0",
+              "width": "50px",
+              "height": "4px",
+              "background-color": "red",
+              "transform": "rotate(-45deg)",
+              "-webkit-transform": "rotate(-45deg)"
+            },
+            ".mbr-shop .test-overlay": {
+              "position": "absolute",
+              "width": "100%",
+              "height": "100%",
+              "background-color": "rgba(0, 0, 0, 0.5)"
+            },
+            ".mbr-shop .filter-by-pu, .mbr-shop .filter-by-pd, .mbr-shop .filter-by-d": {
+              "display": "inline-block",
+              "margin-right": "3px"
+            },
+            ".mbr-shop .sort-buttons": {
+              "padding-bottom": "1rem",
+              "margin-right": "13px",
+              "text-align": "right"
+            },
+            ".mbr-shop .galleryItem:before": {
+              "width": "0 !important",
+              "height": "0 !important"
+            },
+            ".mbr-shop .modal-dialog": {
+              "max-width": "700px"
+            },
+            ".mbr-shop .mbr-gallery-item": {
+              "left": "0 !important",
+              "top": "0 !important",
+              "vertical-align": "top",
+              "position": "relative !important",
+              "transform": "none !important",
+              "padding": "10px"
+            },
+            ".mbr-shop .galleryItem h4, .mbr-shop .carousel-item h4": {
+              "font-style": "normal",
+              "line-height": "1",
+              "text-transform": "none",
+              "letter-spacing": "-1px",
+              "word-spacing": "0",
+              "margin-bottom": "0.3rem",
+              "padding-top": "15px",
+              "transition": "color 0.5s"
+            },
+            ".mbr-shop .galleryItem h5, .mbr-shop .carousel-item h5": {
+              "font-style": "italic",
+              "font-weight": "400",
+              "line-height": "22.36px",
+              "text-transform": "none",
+              "letter-spacing": "0px",
+              "word-spacing": "0"
+            },
+            ".mbr-shop .galleryItem p, .mbr-shop .carousel-item p": {
+              "font-style": "italic",
+              "font-weight": "400",
+              "text-transform": "none",
+              "letter-spacing": "0px",
+              "word-spacing": "0px",
+              "text-align": "center",
+              "display": "inline"
+            },
+            ".mbr-shop .item-button": {
+              "text-align": "center"
+            },
+            ".mbr-shop .modalButton": {
+              "display": "inline-block",
+              "float": "right",
+              "margin-right": "10px"
+            },
+            ".mbr-shop .modalButton.btn-success": {
+              "right": "15%"
+            },
+            ".mbr-shop .sidebar": {
+              "margin-top": "30px",
+              "position": "relative"
+            },
+            ".mbr-shop .sidebar-block": {
+              "position": "relative"
+            },
+            ".mbr-shop .sidebar-background:after": {
+              "content": "''",
+              "position": "absolute",
+              "width": "100%",
+              "height": "102%",
+              "background-color": "rgba(0, 0, 0, 0.05)",
+              "top": "-20px",
+              "right": "3px"
+            },
+            ".mbr-shop .bestsellers": {
+              "padding-left": "0",
+              "padding-right": "0",
+              "position": "relative",
+              "margin-bottom": "20px"
+            },
+            ".mbr-shop .bestsellers .onsale": {
+              "top": "-15px"
+            },
+            ".mbr-shop .bestsellers .price-block": {
+              "padding-top": "5px",
+              "text-align": "left",
+              "line-height": "1"
+            },
+            ".mbr-shop .bestsellers .mbr-gallery-item": {
+              "width": "100%"
+            },
+            ".mbr-shop .bestsellers .mbr-gallery-item img": {
+              "width": "80px",
+              "float": "left",
+              "margin-right": "20px"
+            },
+            ".mbr-shop .bestsellers .mbr-gallery-item h4": {
+              "text-align": "left",
+              "padding-bottom": "5px",
+              "line-height": "1",
+              "border-bottom": "1px dotted #d6d6d6"
+            },
+            ".mbr-shop .bestsellers .mbr-gallery-item h5": {
+              "text-align": "left",
+              "display": "none"
+            },
+            ".mbr-shop .bestsellers .mbr-gallery-item p": {
+              "text-align": "left"
+            },
+            ".mbr-shop .bestsellers .btn": {
+              "display": "none"
+            },
+            ".mbr-shop .bestsellers-img": {
+              "display": "inline-block",
+              "width": "80px",
+              "height": "80px",
+              "overflow": "hidden"
+            },
+            ".mbr-shop .bestsellers-title": {
+              "display": "inline-block"
+            },
+            ".mbr-shop .onsale": {
+              "position": "absolute",
+              "top": "5px",
+              "right": "5px",
+              "display": "block",
+              "transition": "color .3s ease",
+              "text-align": "center",
+              "z-index": "100",
+              "height": "30px",
+              "line-height": "30px",
+              "padding": "0 15px",
+              "background": "@saleBg",
+              "color": "contrast(@saleBg)",
+              "border-radius": "30px",
+              "font-weight": "400",
+              "font-style": "normal",
+              "text-transform": "none",
+              "letter-spacing": "0px"
+            },
+            ".mbr-shop .mbr-gallery-item__hided": {
+              "display": "none"
+            },
+            ".mbr-shop .mbr-gallery-item__hided h4, .mbr-shop .mbr-gallery-item__hided h5, .mbr-shop .mbr-gallery-item__hided p": {
+              "display": "none"
+            },
+            ".mbr-shop .mbr-gallery-item__hided .btn": {
+              "display": "none"
+            },
+            ".mbr-shop .galleryItem .price-block": {
+              "display": "block",
+              "margin-bottom": "8px"
+            },
+            ".mbr-shop .galleryItem .price-block span": {
+              "font-style": "normal",
+              "font-weight": "700",
+              "line-height": "1",
+              "text-transform": "none",
+              "letter-spacing": "-1px",
+              "word-spacing": "0"
+            },
+            ".mbr-shop .mbr-gallery-filter": {
+              "padding-left": "0",
+              "text-align": "left",
+              "padding-top": "0"
+            },
+            ".mbr-shop .mbr-gallery-filter ul li": {
+              "position": "relative",
+              "padding": "7px 0 7px 25px",
+              "border-bottom": "1px dotted #d6d6d6",
+              "margin": "0",
+              "font-style": "normal",
+              "font-weight": "400",
+              "line-height": "24.99px",
+              "text-transform": "none",
+              "letter-spacing": "0px",
+              "word-spacing": "0",
+              "direction": "ltr",
+              "border": "none",
+              "display": "list-item",
+              "text-align": "left",
+              "transition": "all 0.3s ease-out",
+              "cursor": "pointer"
+            },
+            ".mbr-shop .mbr-gallery-filter ul li.active": {
+              "background-color": "transparent",
+              "font-weight": "bold"
+            },
+            ".mbr-shop .mbr-gallery-filter ul li:before": {
+              "content": "\"\"",
+              "position": "absolute",
+              "left": "0",
+              "top": "50%",
+              "margin-top": "-2.5px",
+              "background": "rgba(0, 0, 0, 0.3)",
+              "width": "5px",
+              "height": "5px"
+            },
+            ".mbr-shop .mbr-gallery-filter ul li:hover": {
+              "padding-left": "30px",
+              "background-color": "transparent"
+            },
+            ".mbr-shop .range-slider": {
+              "padding-bottom": "25px"
+            },
+            ".mbr-shop .filter-cost": {
+              "display": "block",
+              "vertical-align": "middle",
+              "max-width": "250px",
+              "text-align": "left",
+              "position": "relative",
+              "margin-bottom": "30px"
+            },
+            ".mbr-shop .filter-cost p": {
+              "margin-bottom": "10px",
+              "font-size": "16px",
+              "line-height": "21px",
+              "color": "#666666",
+              "font-weight": "bold"
+            },
+            ".mbr-shop .price-controls": {
+              "position": "relative",
+              "height": "36px",
+              "margin-bottom": "30px",
+              "border": "2px solid #666666",
+              "border-radius": "2px",
+              "font-size": "0"
+            },
+            ".mbr-shop .price-controls label": {
+              "display": "inline-block",
+              "width": "50%",
+              "font-size": "14px",
+              "line-height": "32px",
+              "color": "#666666",
+              "font-weight": "normal",
+              "cursor": "pointer",
+              "margin-bottom": "0"
+            },
+            ".mbr-shop .price-controls label.min-price": {
+              "border-right": "2px solid #666666"
+            },
+            ".mbr-shop .price-controls input": {
+              "width": "100%",
+              "background-color": "#ffffff",
+              "border": "none",
+              "line-height": "31px",
+              "height": "31px",
+              "text-align": "center",
+              "-webkit-user-select": "none",
+              "user-select": "none"
+            },
+            ".mbr-shop .range-controls": {
+              "position": "relative"
+            },
+            ".mbr-shop .range-controls .scale": {
+              "width": "100%",
+              "height": "2px",
+              "background-color": "rgba(190, 190, 190, 0.3)"
+            },
+            ".mbr-shop .range-controls .bar": {
+              "margin-left": "0",
+              "width": "100%",
+              "height": "2px",
+              "background-color": "#666666"
+            },
+            ".mbr-shop .toggle": {
+              "position": "absolute",
+              "top": "-9px",
+              "width": "4px",
+              "height": "4px",
+              "border": "8px solid #666666",
+              "border-radius": "100%",
+              "box-sizing": "content-box",
+              "background-color": "#ababab",
+              "cursor": "pointer"
+            },
+            ".mbr-shop .toggle:hover, .mbr-shop .toggle:active": {
+              "background-color": "#c0a375"
+            },
+            ".mbr-shop .min-toggle": {
+              "left": "0"
+            },
+            ".mbr-shop .max-toggle": {
+              "right": "0"
+            },
+            ".mbr-shop .hided-by-price": {
+              "display": "none"
+            },
+            ".mbr-shop .text-modal": {
+              "padding-right": "30px",
+              "padding-left": "30px"
+            },
+            ".mbr-shop .text-modal .item-button": {
+              "text-align": "left !important"
+            },
+            ".mbr-shop .text-modal .price-block": {
+              "line-height": "1",
+              "border-bottom": "1px dotted #d6d6d6"
+            },
+            ".mbr-shop .text-modal .price-block p": {
+              "display": "inline"
+            },
+            ".mbr-shop .text-modal .price-block span": {
+              "display": "inline-block",
+              "font-weight": "700",
+              "padding": "10px 0 20px 0"
+            },
+            ".mbr-shop .text-modal .card-description": {
+              "padding-top": "20px",
+              "display": "block",
+              "font-size": "16px",
+              "line-height": "24px",
+              "margin-bottom": "50px"
+            },
+            ".mbr-shop .modal-control-panel": {
+              "padding-right": "0"
+            },
+            ".mbr-shop .modal-cb": {
+              "display": "inline-block",
+              "float": "right",
+              "margin-right": "10px",
+              "margin-left": "10px"
+            },
+            ".mbr-shop .shopItemsModalBg": {
+              "width": "100%",
+              "height": "100%"
+            },
+            ".mbr-shop .close-modal-wrapper": {
+              "cursor": "pointer",
+              "width": "40px",
+              "height": "40px",
+              "position": "absolute",
+              "top": "0",
+              "right": "0"
+            },
+            ".mbr-shop .close-modal-wrapper:after": {
+              "content": "\"\"",
+              "position": "absolute",
+              "width": "40px",
+              "height": "3px",
+              "background-color": "#cccccc",
+              "top": "50%",
+              "right": "5%",
+              "transform": "rotate(-45deg)",
+              "-webkit-transform": "rotate(-45deg)"
+            },
+            ".mbr-shop .close-modal-wrapper:before": {
+              "content": "\"\"",
+              "position": "absolute",
+              "width": "3px",
+              "height": "40px",
+              "background-color": "#cccccc",
+              "right": "50%",
+              "top": "5%",
+              "transform": "rotate(-45deg)",
+              "-webkit-transform": "rotate(-45deg)"
+            },
+            ".mbr-shop .closeModal": {
+              "position": "absolute",
+              "top": "0",
+              "right": "0"
+            },
+            ".mbr-shop .galleryItem .sidebar_wraper": {
+              "text-align": "center"
+            },
+            ".mbr-shop .shopItemsModal .sidebar_wraper": {
+              "text-align": "left"
+            },
+            ".mbr-shop .shopItemsModal .onsale": {
+              "top": "10px",
+              "right": "10px",
+              "border": "1px solid #e7e7e7"
+            },
+            ".mbr-shop .shop-items .onsale, .mbr-shop .bestseller-block .onsale": {
+              "font-size": "15px !important"
+            },
+            ".mbr-shop .item_overlay": {
+              "position": "absolute",
+              "width": "100%",
+              "height": "100%",
+              "z-index": "99",
+              "background": "transparent"
+            },
+            ".mbr-shop .style_overlay": {
+              "position": "absolute",
+              "width": "100%",
+              "height": "100%"
+            },
+            ".mbr-shop .price-range": {
+              "display": "inline-block"
+            },
+            ".mbr-shop .price-range-reset": {
+              "display": "inline-block"
+            },
+            ".mbr-shop .bestsellers .item-button": {
+              "display": "none !important"
+            },
+            ".mbr-shop .range-slider h4": {
+              "margin-bottom": "15px"
+            },
+            ".mbr-shop .mbr-gallery-filter ul": {
+              "padding-left": "0px",
+              "display": "inline-block",
+              "list-style": "none",
+              "margin-bottom": "0px"
+            },
+            ".mbr-shop .categories:after": {
+              "content": "\"\"",
+              "display": "table",
+              "clear": "both"
+            },
+            "@media (min-width: 767px) and (max-width: 1100px)": {
+              ".mbr-shop .col-md-9": {
+                "width": "100%"
+              },
+              ".mbr-shop .col-md-3": {
+                "width": "100%"
+              },
+              ".mbr-shop .sidebar-background:after": {
+                "top": "0"
+              },
+              ".mbr-shop .bestseller-block": {
+                "width": "100%",
+                "margin": "0",
+                "display": "inline-block",
+                "float": "left",
+                "padding-top": "15px"
+              },
+              ".mbr-shop .range-slider": {
+                "width": "49%",
+                "margin": "0",
+                "display": "inline-block",
+                "float": "right",
+                "padding-top": "15px"
+              },
+              ".mbr-shop .bestsellers": {
+                "width": "100%"
+              },
+              ".mbr-shop .bestsellers .mbr-gallery-item": {
+                "width": "49%",
+                "display": "inline-block"
+              },
+              ".mbr-shop .sidebar-categories": {
+                "width": "49%",
+                "margin": "0",
+                "display": "inline-block",
+                "padding-top": "15px"
+              },
+              ".mbr-shop .price-range": {
+                "max-width": "250px",
+                "text-align": "center"
+              },
+              ".clearfix:after": {
+                "content": "\"\"",
+                "display": "table",
+                "clear": "both"
+              }
+            },
+            "@media (max-width: 991px) and (min-width: 768px)": {
+              ".mbr-shop .mbr-gallery-item": {
+                "width": "33%"
+              }
+            },
+            "@media (max-width: 500px)": {
+              ".mbr-shop .shopItemsModal": {
+                "padding": "50px 10px 10px 10px"
+              },
+              ".mbr-shop .shop-title": {
+                "max-width": "100%"
+              },
+              ".mbr-shop .mbr-gallery-item": {
+                "width": "100%"
+              }
+            },
+            "@media (max-width: 1200px)": {
+              ".mbr-shop .sort-buttons": {
+                "text-align": "center",
+                "margin-right": "0 !important"
+              }
+            },
+            "@media (max-width: 767px)": {
+              ".mbr-shop .image-modal": {
+                "text-align": "center"
+              },
+              ".mbr-shop .image-modal img": {
+                "max-height": "50vh",
+                "width": "auto",
+                "max-width": "100%"
+              },
+              ".mbr-shop .shopItemsModal": {
+                "top": "15%",
+                "bottom": "70px",
+                "left": "10%",
+                "width": "80%"
+              },
+              ".mbr-shop .shopItemsModal .image-modal": {
+                "padding-right": "0"
+              },
+              ".mbr-shop .sidebar-background:after": {
+                "top": "-1%"
+              }
+            },
+            "@media (max-width: 1100px)": {
+              ".mbr-shop .shopItemsModal": {
+                "max-height": "85vh",
+                "width": "90%",
+                "left": "5%",
+                "margin-left": "0"
+              },
+              ".mbr-shop .sort-buttons": {
+                "margin-right": "21px"
+              },
+              ".mbr-shop .sidebar-background:after": {
+                "right": "0",
+                "width": "100%"
+              },
+              ".mbr-shop .text-modal .card-description": {
+                "width": "100%"
+              },
+              ".mbr-shop .text-modal .price-block": {
+                "width": "100%"
+              },
+              ".mbr-shop .text-modal h4": {
+                "padding-top": "30px"
+              }
+            },
+            ".shopItemsModal_wraper .mbr-section-btn": {
+              "display": "block !important"
+            },
+            ".range-slider .mbr-section-btn": {
+              "margin": "0"
+            },
+            ".oldprice": {
+              "color": "#767676",
+              "padding-left": ".8rem",
+              "text-decoration": "line-through"
+            },
+            ".mbr-gallery-item": {
+              ".sidebar_wraper": {
+                ".mbr-section-btn": {
+                  "text-align": "left"
+                },
+                ".item-title": {
+                  "text-align": "left",
+                  "padding-bottom": ".5rem"
+                },
+                ".item-subtitle": {
+                  "text-align": "left"
+                },
+                ".price-block": {
+                  "text-align": "left"
+                }
+              }
+            }
+          },
+          "_name": "shop6",
+          "_customHTML": "<section class=\"mbr-gallery\" group=\"Shops\" once=\"shops\" plugins=\"mobirise-shop,Gallery\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n        <input type=\"range\" title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"6\" inline>\n        <input type=\"range\" title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"6\" inline>\n        <input type=\"color\" title=\"Card Bg\" name=\"cardBg\" value=\"#a38dfd\">\n        <input type=\"color\" title=\"On Sale Bg\" name=\"saleBg\" value=\"#fe525b\">\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\">\n\n        <input type=\"shop\" title=\"Shop\" name=\"shop\" buttons=\"secondary\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div mbr-class=\"{'container': !fullWidth}\">\n        <div mbr-shop=\"shop\" class=\"mbr-shop\"></div>\n    </div>\n\n</section>",
+          "_cid": "qyvDMVSDbA",
+          "_protectedParams": [
+            "shop__showSidebar",
+            "shop__showCardButtons",
+            "shop__showSortButtons",
+            "shop__showBestSellers",
+            "shop__showPriceRange",
+            "shop__showTags",
+            "text_all",
+            "sidebar1",
+            "sidebar2",
+            "sidebar3",
+            "shop__filtersTextStyle",
+            "buttons_default_class",
             "filter_by_d",
             "filter_by_pu",
             "filter_by_pd",
@@ -740,9 +2471,10 @@
             "sidebar2": "Price Range",
             "sidebar3": "Filter",
             "shop__filtersTextStyle": "display-7",
-            "filter_by_d": "Default sorting",
-            "filter_by_pu": "<a class=\"btn btn-sm btn-primary-outline disableSortButton\" href=\"\">Price: low to high</a>",
-            "filter_by_pd": "<a class=\"btn btn-sm btn-primary-outline disableSortButton\" href=\"\">Price: high to low</a>",
+            "buttons_default_class": "secondary",
+            "filter_by_d": "<a class=\"btn btn-sm btn-secondary disableSortButton\" href=\"\">Default sorting</a>",
+            "filter_by_pu": "<a class=\"btn btn-sm btn-secondary-outline disableSortButton\" href=\"\">Price: low to high</a>",
+            "filter_by_pd": "<a class=\"btn btn-sm btn-secondary-outline disableSortButton\" href=\"\">Price: high to low</a>",
             "price_range": "<a class=\"btn btn-sm btn-primary\" data-app-btn=\"true\" href=\"\">Filter</a>",
             "price_range_reset": "<a class=\"btn btn-sm btn-secondary\" data-app-btn=\"true\" href=\"\">Show all</a>",
             "shop": [
@@ -751,13 +2483,13 @@
                 "bestSeller": false,
                 "onSale": false,
                 "oldPrice": false,
-                "itemTitle": "Flying Cowboy Hat",
+                "itemTitle": "Brown Glasses",
                 "itemDescription": "Casual shoes (contact us for sizing)<br><br><ul><li>Lightweight textured fabric</li> <li>Rounded v-neckline</li> <li>Pom pom trims</li> <li>Regular fit – true to size</li></ul> <br>Duis auctor hendrerit nisi, at lacinia ex vulputate quis. Suspendisse convallis iaculis tortor, quis mattis lectus rutrum a.<br><br> Product code: <b>385DDF5p</b>",
                 "itemPriceTitle": "From: ",
-                "itemPrice": "$9.99",
-                "oldPriceValue": "$19.98",
+                "itemPrice": "$10.00",
+                "oldPriceValue": "$20.00",
                 "sale": "-50%",
-                "button": "<a data-app-btn=\"true\" class=\"btn btn-primary\" href=\"https://mobirise.com\">Buy now!</a>",
+                "button": "<a data-app-btn=\"true\" class=\"btn btn-secondary\" href=\"https://mobirise.com\">Buy now!</a>",
                 "image": "@PROJECT_PATH@/assets/images/shop0.jpg",
                 "thumb": "@PROJECT_PATH@/assets/images/shop0.jpg",
                 "customStyle5": "display-5",
@@ -770,13 +2502,13 @@
                 "bestSeller": false,
                 "onSale": false,
                 "oldPrice": false,
-                "itemTitle": "Fast Carbs",
+                "itemTitle": "Men's Shoes",
                 "itemDescription": "Casual shoes (contact us for sizing)<br><br><ul><li>Lightweight textured fabric</li> <li>Rounded v-neckline</li> <li>Pom pom trims</li> <li>Regular fit – true to size</li></ul> <br>Duis auctor hendrerit nisi, at lacinia ex vulputate quis. Suspendisse convallis iaculis tortor, quis mattis lectus rutrum a.<br><br> Product code: <b>385DDF5p</b>",
                 "itemPriceTitle": "From: ",
-                "itemPrice": "$9.99",
-                "oldPriceValue": "$19.98",
+                "itemPrice": "$10.00",
+                "oldPriceValue": "$20.00",
                 "sale": "-50%",
-                "button": "<a data-app-btn=\"true\" class=\"btn btn-primary\" href=\"https://mobirise.com\">Buy now!</a>",
+                "button": "<a data-app-btn=\"true\" class=\"btn btn-secondary\" href=\"https://mobirise.com\">Buy now!</a>",
                 "image": "@PROJECT_PATH@/assets/images/shop1.jpg",
                 "thumb": "@PROJECT_PATH@/assets/images/shop1.jpg",
                 "customStyle5": "display-5",
@@ -789,13 +2521,13 @@
                 "bestSeller": false,
                 "onSale": true,
                 "oldPrice": true,
-                "itemTitle": "Bicycle",
+                "itemTitle": "Blue Backpack",
                 "itemDescription": "Casual shoes (contact us for sizing)<br><br><ul><li>Lightweight textured fabric</li> <li>Rounded v-neckline</li> <li>Pom pom trims</li> <li>Regular fit – true to size</li></ul> <br>Duis auctor hendrerit nisi, at lacinia ex vulputate quis. Suspendisse convallis iaculis tortor, quis mattis lectus rutrum a.<br><br> Product code: <b>385DDF5p</b>",
                 "itemPriceTitle": "From: ",
-                "itemPrice": "$9.99",
-                "oldPriceValue": "$19.98",
+                "itemPrice": "$10.00",
+                "oldPriceValue": "$20.00",
                 "sale": "-50%",
-                "button": "<a data-app-btn=\"true\" class=\"btn btn-primary\" href=\"https://mobirise.com\">Buy now!</a>",
+                "button": "<a data-app-btn=\"true\" class=\"btn btn-secondary\" href=\"https://mobirise.com\">Buy now!</a>",
                 "image": "@PROJECT_PATH@/assets/images/shop2.jpg",
                 "thumb": "@PROJECT_PATH@/assets/images/shop2.jpg",
                 "customStyle5": "display-5",
@@ -808,13 +2540,13 @@
                 "bestSeller": false,
                 "onSale": false,
                 "oldPrice": false,
-                "itemTitle": "Cap of invisibility",
+                "itemTitle": "Red Snapback",
                 "itemDescription": "Casual shoes (contact us for sizing)<br><br><ul><li>Lightweight textured fabric</li> <li>Rounded v-neckline</li> <li>Pom pom trims</li> <li>Regular fit – true to size</li></ul> <br>Duis auctor hendrerit nisi, at lacinia ex vulputate quis. Suspendisse convallis iaculis tortor, quis mattis lectus rutrum a.<br><br> Product code: <b>385DDF5p</b>",
                 "itemPriceTitle": "From: ",
-                "itemPrice": "$9.99",
-                "oldPriceValue": "$19.98",
+                "itemPrice": "$10.00",
+                "oldPriceValue": "$20.00",
                 "sale": "-50%",
-                "button": "<a data-app-btn=\"true\" class=\"btn btn-primary\" href=\"https://mobirise.com\">Buy now!</a>",
+                "button": "<a data-app-btn=\"true\" class=\"btn btn-secondary\" href=\"https://mobirise.com\">Buy now!</a>",
                 "image": "@PROJECT_PATH@/assets/images/shop3.jpg",
                 "thumb": "@PROJECT_PATH@/assets/images/shop3.jpg",
                 "customStyle5": "display-5",
@@ -827,13 +2559,13 @@
                 "bestSeller": false,
                 "onSale": false,
                 "oldPrice": false,
-                "itemTitle": "Invisible Hat",
+                "itemTitle": "Black Glasses",
                 "itemDescription": "Casual shoes (contact us for sizing)<br><br><ul><li>Lightweight textured fabric</li> <li>Rounded v-neckline</li> <li>Pom pom trims</li> <li>Regular fit – true to size</li></ul> <br>Duis auctor hendrerit nisi, at lacinia ex vulputate quis. Suspendisse convallis iaculis tortor, quis mattis lectus rutrum a.<br><br> Product code: <b>385DDF5p</b>",
                 "itemPriceTitle": "From: ",
-                "itemPrice": "$9.99",
-                "oldPriceValue": "$19.98",
+                "itemPrice": "$10.00",
+                "oldPriceValue": "$20.00",
                 "sale": "-50%",
-                "button": "<a data-app-btn=\"true\" class=\"btn btn-primary\" href=\"https://mobirise.com\">Buy now!</a>",
+                "button": "<a data-app-btn=\"true\" class=\"btn btn-secondary\" href=\"https://mobirise.com\">Buy now!</a>",
                 "image": "@PROJECT_PATH@/assets/images/shop4.jpg",
                 "thumb": "@PROJECT_PATH@/assets/images/shop4.jpg",
                 "customStyle5": "display-5",
@@ -846,13 +2578,13 @@
                 "bestSeller": false,
                 "onSale": false,
                 "oldPrice": false,
-                "itemTitle": "Shoes",
+                "itemTitle": "Women's Shoes",
                 "itemDescription": "Casual shoes (contact us for sizing)<br><br><ul><li>Lightweight textured fabric</li> <li>Rounded v-neckline</li> <li>Pom pom trims</li> <li>Regular fit – true to size</li></ul> <br>Duis auctor hendrerit nisi, at lacinia ex vulputate quis. Suspendisse convallis iaculis tortor, quis mattis lectus rutrum a.<br><br> Product code: <b>385DDF5p</b>",
                 "itemPriceTitle": "From: ",
-                "itemPrice": "$9.99",
-                "oldPriceValue": "$19.98",
+                "itemPrice": "$10.00",
+                "oldPriceValue": "$20.00",
                 "sale": "-50%",
-                "button": "<a data-app-btn=\"true\" class=\"btn btn-primary\" href=\"https://mobirise.com\">Buy now!</a>",
+                "button": "<a data-app-btn=\"true\" class=\"btn btn-secondary\" href=\"https://mobirise.com\">Buy now!</a>",
                 "image": "@PROJECT_PATH@/assets/images/shop5.jpg",
                 "thumb": "@PROJECT_PATH@/assets/images/shop5.jpg",
                 "customStyle5": "display-5",
@@ -865,13 +2597,13 @@
                 "bestSeller": false,
                 "onSale": false,
                 "oldPrice": false,
-                "itemTitle": "Backpack",
+                "itemTitle": "Pink Backpack",
                 "itemDescription": "Casual shoes (contact us for sizing)<br><br><ul><li>Lightweight textured fabric</li> <li>Rounded v-neckline</li> <li>Pom pom trims</li> <li>Regular fit – true to size</li></ul> <br>Duis auctor hendrerit nisi, at lacinia ex vulputate quis. Suspendisse convallis iaculis tortor, quis mattis lectus rutrum a.<br><br> Product code: <b>385DDF5p</b>",
                 "itemPriceTitle": "From: ",
-                "itemPrice": "$9.99",
-                "oldPriceValue": "$19.98",
+                "itemPrice": "$10.00",
+                "oldPriceValue": "$20.00",
                 "sale": "-50%",
-                "button": "<a data-app-btn=\"true\" class=\"btn btn-primary\" href=\"https://mobirise.com\">Buy now!</a>",
+                "button": "<a data-app-btn=\"true\" class=\"btn btn-secondary\" href=\"https://mobirise.com\">Buy now!</a>",
                 "image": "@PROJECT_PATH@/assets/images/shop6.jpg",
                 "thumb": "@PROJECT_PATH@/assets/images/shop6.jpg",
                 "customStyle5": "display-5",
@@ -884,13 +2616,13 @@
                 "bestSeller": false,
                 "onSale": false,
                 "oldPrice": false,
-                "itemTitle": "Fun garlands",
+                "itemTitle": "Red Cap",
                 "itemDescription": "Casual shoes (contact us for sizing)<br><br><ul><li>Lightweight textured fabric</li> <li>Rounded v-neckline</li> <li>Pom pom trims</li> <li>Regular fit – true to size</li></ul> <br>Duis auctor hendrerit nisi, at lacinia ex vulputate quis. Suspendisse convallis iaculis tortor, quis mattis lectus rutrum a.<br><br> Product code: <b>385DDF5p</b>",
                 "itemPriceTitle": "From: ",
-                "itemPrice": "$9.99",
-                "oldPriceValue": "$19.98",
+                "itemPrice": "$10.00",
+                "oldPriceValue": "$20.00",
                 "sale": "-50%",
-                "button": "<a data-app-btn=\"true\" class=\"btn btn-primary\" href=\"https://mobirise.com\">Buy now!</a>",
+                "button": "<a data-app-btn=\"true\" class=\"btn btn-secondary\" href=\"https://mobirise.com\">Buy now!</a>",
                 "image": "@PROJECT_PATH@/assets/images/shop7.jpg",
                 "thumb": "@PROJECT_PATH@/assets/images/shop7.jpg",
                 "customStyle5": "display-5",
@@ -900,7 +2632,7 @@
               }
             ]
           },
-          "_anchor": "shop6-12"
+          "_anchor": "shop6-18"
         }
       ]
     }
