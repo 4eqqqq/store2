@@ -743,17 +743,21 @@ body {
   height: auto;
   min-height: 100vh;
 }
-.cid-qzIlFzAHFR {
-  background-image: url("../../../assets/images/background1.jpg");
-}
-.cid-qzIlFzAHFR .mbr-overlay {
-  background: #232323;
-}
-.cid-qzIlFzAHFR .mbr-section-subtitle {
-  letter-spacing: .5rem;
-}
 .cid-qzIlF6j5IV {
-  background-image: url("../../../assets/images/background2.jpg");
+  padding-top: 90px;
+  padding-bottom: 90px;
+  background-image: url("../../../assets/images/lr2015.12-rus.02-school-13-1400x933.jpg");
+}
+.cid-qzIlF6j5IV H3 {
+  color: #ffffff;
+}
+.cid-qzIlF6j5IV .mbr-section-title,
+.cid-qzIlF6j5IV .ornament {
+  color: #ffffff;
+}
+.cid-qzIlF6j5IV .mbr-text,
+.cid-qzIlF6j5IV .mbr-section-btn {
+  color: #ffffff;
 }
 .cid-qzIlEig8MI {
   padding-top: 90px;
@@ -805,46 +809,6 @@ body {
   .cid-qzIlEig8MI .img-block {
     margin-bottom: 1rem;
   }
-}
-.cid-qzIlCKcUGo {
-  padding-top: 90px;
-  padding-bottom: 90px;
-  background-color: #ffffff;
-}
-.cid-qzIlCKcUGo .content-block {
-  text-align: center;
-  position: absolute;
-  transform: translateY(-50%);
-  top: 50%;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
-  width: 80%;
-  background-color: #efefef;
-  transition: all 0.4s ease-in-out;
-}
-.cid-qzIlCKcUGo .content-block .mbr-text {
-  margin: 0;
-}
-.cid-qzIlCKcUGo .content-section {
-  height: 100%;
-  padding: 0 3rem;
-  margin-bottom: 2rem;
-}
-.cid-qzIlCKcUGo .image-wrap:hover img {
-  opacity: 1;
-  transform: translateY(-4%);
-}
-.cid-qzIlCKcUGo .image-wrap:hover > .content-block {
-  opacity: .6;
-}
-.cid-qzIlCKcUGo .image-wrap {
-  width: 100%;
-  height: 100%;
-}
-.cid-qzIlCKcUGo .image-wrap img {
-  transition: all 0.3s ease-in-out;
-  width: 100%;
 }
 .cid-qzIlDhAe0k {
   padding-top: 45px;
