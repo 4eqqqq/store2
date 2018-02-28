@@ -6,7 +6,7 @@
         var e = document.createElement("section");
         e.id = "top-1";
         e.className = "engine";
-        e.innerHTML = '<a href="https://mobirise.info">Mobirise</a> Mobirise v4.4.1';
+        e.innerHTML = '<a href="https://mobirise.me">Mobirise</a> Mobirise v4.6.5';
         document.body.insertBefore(e, document.body.childNodes[0]);
     }
 }();
@@ -464,7 +464,6 @@
             $(document).click(function(e) {
                 try {
                     var target = e.target;
-
                     if ($(target).parents().hasClass('carousel')) {
                         return;
                     }
@@ -474,11 +473,7 @@
                             $(useBody ? 'body' : target.hash).each(function() {
                                 e.preventDefault();
                                 // in css sticky navbar has height 64px
-                                // var stickyMenuHeight = $('.mbr-navbar--sticky').length ? 64 : 0;
                                 var stickyMenuHeight = $(target).parents().hasClass('navbar-fixed-top') ? 60 : 0;
-                                if($(target).parents().find('.menu-top').length!=0){
-                                    stickyMenuHeight = stickyMenuHeight + $(target).parents().find('.menu-top').innerHeight();
-                                }
                                 var goTo = target.hash == '#bottom' ? ($(this).height() - $(window).height()) : ($(this).offset().top - stickyMenuHeight);
                                 // Disable Accordion's and Tab's scroll
                                 if ($(this).hasClass('panel-collapse') || $(this).hasClass('tab-pane')) {
@@ -801,131 +796,11 @@
         }
     }
 
-    // Functions from plugins for
-    // compatible with old projects 
-
-    function setActiveCarouselItem(card){
-       var $target = $(card).find('.carousel-item:first');
-       $target.addClass('active');
-    } 
-    function initTestimonialsCarousel(card){
-        var $target = $(card),
-            $carouselID = $target.attr('ID') +"-carousel"; 
-        $target.find('.carousel').attr('id',$carouselID);
-        $target.find('.carousel-controls a').attr('href','#'+$carouselID);
-        $target.find('.carousel-indicators li').attr('data-target','#'+$carouselID);
-        setActiveCarouselItem($target);  
-    }
-    function initSvgGradients(card) {
-        $ID = $(card).attr('id')+'-svg-gradient';
-        $(card).find('svg linearGradient').attr('id',$ID);      
-        $(card).find('svg.gradient-element').each(function(){
-            $(this).attr('stroke','url(#'+$ID+')');
-            $(this).attr('fill','url(#'+$ID+')');
-        });
-    }
-    function animateBackgroundText(el, text, speed) {
-        $(el).stop();
-        var animatedElement = $(el).find('.animated-element');
-        animatedElement.text(text);
-        animatedElement.css({'white-space': 'nowrap',
-                             'z-index': 0});
-        $(el).css({'position' : 'absolute',
-                   'left' : document.body.clientWidth,
-                   'top' : 'calc(50% - ' + ($(el).height() / 2) + 'px)'});
-        $(el).animate({
-            'left': -$(el).width()
-        }, speed, "linear", function() {
-            $(this).css({
-                'left' : document.body.clientWidth
-            });
-        });
-        var intervalID = setInterval(function() {
-                        $(el).animate({
-                            'left': -$(el).width()
-                        }, speed, "linear", function() {
-                            $(this).css({
-                                'left' : document.body.clientWidth
-                            });
-                        });
-                    }, speed);
-        $(el).attr('id', 'interval' + intervalID);
-    }
     function clickPrev(event){
         event.stopPropagation();
         event.preventDefault();
     }
     if(!isBuilder){
-        if(typeof window.initPopupBtnPlugin === 'undefined'){
-            if($(document.body).find('section.popup-btn-cards').length!=0){
-                window.initPopupBtnPlugin = true;
-                $('section.popup-btn-cards .card-wrapper').each(function(index, el) {
-                    $(this).addClass('popup-btn');
-                }); 
-            }      
-        }
-        if(typeof window.initTestimonialsPlugin === 'undefined'){
-            if($(document.body).find('.testimonials-slider').length!=0){
-                window.initTestimonialsPlugin = true;
-                $('.testimonials-slider').each(function(){
-                    initTestimonialsCarousel(this);
-                }); 
-            }      
-        }
-        if (typeof window.initSwitchArrowPlugin === 'undefined'){
-            window.initSwitchArrowPlugin = true;
-            $(document).ready(function() {
-                if ($('.accordionStyles').length!=0) {
-                        $('.accordionStyles .card-header a[role="button"]').each(function(){
-                            if(!$(this).hasClass('collapsed')){
-                                $(this).addClass('collapsed');
-                            }
-                        });
-                    }
-            });
-            $('.accordionStyles .card-header a[role="button"]').click(function(){
-                var $id = $(this).closest('.accordionStyles').attr('id'),
-                    $iscollapsing = $(this).closest('.card').find('.panel-collapse');
-                if (!$iscollapsing.hasClass('collapsing')) {
-                    if ($id.indexOf('toggle') != -1){
-                        if ($(this).hasClass('collapsed')) {
-                            $(this).find('span.sign').removeClass('mbri-arrow-down').addClass('mbri-arrow-up'); 
-                        }
-                        else{
-                            $(this).find('span.sign').removeClass('mbri-arrow-up').addClass('mbri-arrow-down'); 
-                        }
-                    }
-                    else if ($id.indexOf('accordion')!=-1) {
-                        var $accordion =  $(this).closest('.accordionStyles ');
-                    
-                        $accordion.children('.card').each(function() {
-                            $(this).find('span.sign').removeClass('mbri-arrow-up').addClass('mbri-arrow-down'); 
-                        });
-                        if ($(this).hasClass('collapsed')) {
-                            $(this).find('span.sign').removeClass('mbri-arrow-down').addClass('mbri-arrow-up'); 
-                        }
-                    }
-                }
-            });
-        }
-        if(typeof window.initGradientSvgPlugin ==='undefined'){
-            if($(document.body).find('section.svg-gradient-elements').length!=0){
-                window.initGradientSvgPlugin = true;
-                $('section.svg-gradient-elements').each(function(){
-                    initSvgGradients($(this));
-                });
-            }
-        }
-        if(typeof window.initAnimatedBgTextPlugin === 'undefined'){
-            if($(document.body).find('.animated-text-background').length!=0){
-                window.initAnimatedBgTextPlugin = true;
-                $('.animated-text-background').each(function(){
-                    var speed = (101 - parseInt($(this).find('.animated-element').attr('data-speed'))) * 1000;
-                    var text = $(this).find('.animated-element').attr('data-word');
-                    animateBackgroundText($(this), text, speed);
-                });
-            }
-        }
         // Fix for slider bug
         if($('.mbr-slider.carousel').length!=0){
             $('.mbr-slider.carousel').each(function(){
@@ -957,6 +832,5 @@
             });
         }
     }
-
 
 })(jQuery);
