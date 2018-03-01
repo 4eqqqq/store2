@@ -861,13 +861,13 @@ body {
   content: '\e966';
   display: inline-block;
   width: 16px;
+  top: 30%;
   position: absolute;
   right: 1rem;
   line-height: 1;
   font-size: inherit;
   vertical-align: middle;
   text-align: center;
-  overflow: hidden;
   transform: scale(0, 1);
   -webkit-transition: all 0.25s ease-in-out;
   -moz-transition: all 0.25s ease-in-out;
@@ -1198,7 +1198,7 @@ body {
   color: #333333;
 }
 .cid-qKSDBfAnnY H1 {
-  color: #52e5e5;
+  color: #444444;
 }
 .cid-qKSEuwA5ym {
   padding-top: 60px;
