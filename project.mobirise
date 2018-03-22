@@ -1,38 +1,36 @@
 {
   "settings": {
-    "name": "mobirise3AMP",
+    "name": "Site-03-21_1623",
     "currentPage": "index.html",
     "theme": {
-      "name": "mobirise3amp",
-      "title": "Mobirise 3 AMP",
+      "name": "lightamp",
+      "title": "LightAMP",
       "styling": {
-        "primaryColor": "#f06060",
-        "secondaryColor": "#F58A59",
-        "successColor": "#F13F68",
-        "infoColor": "#5E788D",
-        "warningColor": "#233E53",
-        "dangerColor": "#F8A6A6",
-        "mainFont": "Montserrat",
-        "display1Font": "Montserrat",
-        "display1Size": 4.4,
-        "display2Font": "Montserrat",
-        "display2Size": 3,
-        "display3Font": "Lora",
-        "display3Size": 1,
-        "display5Font": "Montserrat",
-        "display5Size": 1.25,
-        "display7Font": "Raleway",
-        "display7Size": 1,
-        "display4Font": "Lora",
-        "display4Size": 1.5,
-        "display6Font": "Montserrat",
-        "display6Size": 0.8,
+        "primaryColor": "#F9D5BD",
+        "secondaryColor": "#bbe0e2",
+        "successColor": "#c6e2ba",
+        "infoColor": "#f5edf6",
+        "warningColor": "#7F7E7E",
+        "dangerColor": "#fe8b8b",
+        "mainFont": "Roboto",
+        "display1Font": "Reem Kufi",
+        "display1Size": 6,
+        "display2Font": "Reem Kufi",
+        "display2Size": 4,
+        "display5Font": "Reem Kufi",
+        "display5Size": 2.25,
+        "display6Font": "Roboto",
+        "display6Size": 1.3,
+        "display7Font": "Roboto",
+        "display7Size": 1.1,
+        "display4Font": "Reem Kufi",
+        "display4Size": 1,
         "isRoundedButtons": false
       }
     },
     "path": "@PROJECT_PATH@",
     "versionFirst": "4.6.6",
-    "uniqCompNum": 6,
+    "uniqCompNum": 3,
     "versionPublish": "4.6.6",
     "screenshot": "screenshot.png"
   },
@@ -53,116 +51,6 @@
               "padding-top": "(@paddingTop * 15px)",
               "padding-bottom": "(@paddingBottom * 15px)"
             },
-            "& when (@bg-type = \"color\")": {
-              "background-color": "@bg-value"
-            },
-            "& when (@bg-type = \"image\")": {
-              "background-image": "url(@bg-value)"
-            },
-            "& when (@flexDirection)": {
-              ".mbr-row": {
-                "flex-direction": "row-reverse"
-              }
-            },
-            ".img_wrapper": {
-              "width": "100%"
-            },
-            ".vcenter": {
-              "margin": "auto"
-            },
-            ".mbr-overlay": {
-              "background-color": "@overlayColor",
-              "opacity": "@overlayOpacity",
-              "width": "100%",
-              "height": "100%",
-              "position": "absolute",
-              "top": "0"
-            },
-            ".ampTabContainer": {
-              "display": "flex",
-              "flex-wrap": "wrap"
-            },
-            ".tab-button[selected] + .tab-content": {
-              "display": "block"
-            },
-            ".tab-button[selected]": {
-              ".tab-head": {
-                "background-color": "@activeColor",
-                "color": "@activetabColor"
-              }
-            },
-            ".tab-button": {
-              "list-style": "none",
-              "flex-grow": "1",
-              "text-align": "center",
-              "cursor": "pointer"
-            },
-            ".tab-content": {
-              "display": "none",
-              "width": "100%",
-              "order": "1",
-              "padding-top": "1rem",
-              "padding-bottom": "1.5rem",
-              "border-bottom": "1px dotted #ddd",
-              "border-top": "1px dotted #ddd",
-              "margin-top": "1rem",
-              "p": {
-                "margin": "0",
-                "padding": "0px"
-              }
-            },
-            "amp-selector": {
-              "padding": "1rem",
-              "margin": "1rem"
-            },
-            ".tab-head": {
-              "padding-left": "10px",
-              "padding-right": "10px",
-              "margin": "0.3rem",
-              "border": "1px solid gray",
-              "transition": "all 0.3s",
-              "&:hover": {
-                "color": "@activetabColor",
-                "background-color": "@activeColor"
-              }
-            },
-            ".tab-title": {
-              "margin-bottom": "20px"
-            },
-            "amp-selector [option][selected]": {
-              "outline": "none"
-            },
-            "@media (min-width: 992px)": {
-              ".resize": {
-                "max-width": "~\"@{imageWidth}%\""
-              },
-              ".resizeblock": {
-                "max-width": "100%",
-                "width": "50%"
-              }
-            },
-            "@media (max-width: 767px)": {
-              ".mbr-col-sm-12": {
-                "padding-right": "0px",
-                "padding-left": "0px"
-              }
-            }
-          },
-          "_name": "features22",
-          "_customHTML": "<section class=\"features22\" group=\"Features\" plugins=\"amp-main, amp-bild, amp-selector, amp-carousel\" mbr-class=\"{'mbr-fullscreen': fullScreen}\">\n\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"range\" inline=\"\" title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"7\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline=\"\" title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"7\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline=\"\" title=\"Image Width\" name=\"imageWidth\" min=\"20\" max=\"50\" step=\"1\" value=\"50\">\n        <input type=\"checkbox\" title=\"Show Image\" name=\"showImage\" checked=\"\">\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked=\"\">\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked=\"\">\n        <input type=\"checkbox\" title=\"Media on Left/Right\" name=\"flexDirection\">\n        <input type=\"color\" title=\"Active Tab BG\" name=\"activeColor\" value=\"#000000\">\n        <input type=\"color\" title=\"Active Color\" name=\"activetabColor\" value=\"#ffffff\">\n        <select name=\"tabsAmount\" title=\"Tabs Amount\">\n            <option value=\"2\">2</option>\n            <option value=\"3\" selected=\"\">3</option>\n            <option value=\"4\">4</option>\n            <option value=\"5\">5</option>\n        </select>\n\n        <fieldset type=\"background\" name=\"bg\">\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/background1.jpg\">\n            <input type=\"color\" title=\"Background Color\" value=\"#ffffff\" selected=\"\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked=\"\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#dedede\" condition=\"overlay &amp;&amp; bg.type !== 'color'\">\n        <input type=\"range\" inline=\"\" title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.3\" condition=\"overlay &amp;&amp; bg.type !== 'color'\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay &amp;&amp; bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div class=\"container\">\n\n        <div class=\"mbr-row mbr-justify-content-center\">\n\n\n            <div class=\"mbr-col-lg-6 mbr-col-md-12 mbr-col-sm-12 resize vcenter\" mbr-if=\"showImage\">\n                <div class=\"img_wrapper vcenter\">\n                    <amp-img src=\"@PROJECT_PATH@/assets/images/img5.jpg\" alt=\"Mobirise\" width=\"540\" height=\"360\" layout=\"responsive\">\n                        <img class=\"mbr-temp\" src=\"@PROJECT_PATH@/assets/images/img5.jpg\" alt=\"Mobirise\">\n                    </amp-img>\n                </div>\n            </div>\n\n\n            <div class=\"mbr-col-lg-6 mbr-col-md-12 resizeblock vcenter\">\n\n\n\n                <amp-selector role=\"tablist\" layout=\"container\" class=\"ampTabContainer\">\n                    <div role=\"tab\" class=\"tab-button\" selected=\"\" option=\"a\">\n                        <h3 class=\"tab-head align-center mbr-fonts-style\" mbr-theme-style=\"display-7\">FAMOUS SPEAKERS\n                        </h3>\n                    </div>\n                    <div role=\"tabpanel\" class=\"tab-content\">\n                        <h2 class=\"tab-title mbr-fonts-style align-center\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\">FAMOUS SPEAKERS\n                        </h2>\n                        <p class=\"mbr-fonts-style align-center\" mbr-theme-style=\"display-7\" mbr-if=\"showText\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nisl risus, ultrices non dictum\n                            id, varius ut erat. Etiam eget tincidunt eros, at sollicitudin mauris.\n                            <br>\n                        </p>\n                    </div>\n\n                    <div role=\"tab\" class=\"tab-button\" option=\"b\">\n                        <h3 class=\"tab-head align-center mbr-fonts-style\" mbr-theme-style=\"display-7\">CREATIVE IDEAS</h3>\n                    </div>\n                    <div role=\"tabpanel\" class=\"tab-content\">\n                        <h2 class=\"tab-title align-center mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\">CREATIVE IDEAS</h2>\n                        <p class=\"mbr-fonts-style align-center\" mbr-theme-style=\"display-7\" mbr-if=\"showText\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nisl risus, ultrices non dictum\n                            id, varius ut erat. Etiam eget tincidunt eros, at sollicitudin mauris.</p>\n                    </div>\n                    <div role=\"tab\" class=\"tab-button align-center\" option=\"c\" mbr-if=\"tabsAmount > 2\">\n                        <h3 class=\"tab-head align-center mbr-fonts-style\" mbr-theme-style=\"display-7\">UNIQUE TRAININGS</h3>\n                    </div>\n                    <div role=\"tabpanel\" class=\"tab-content\" mbr-if=\"tabsAmount > 2\">\n                        <h2 class=\"tab-title align-center mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\">UNIQUE TRAININGS</h2>\n                        <p class=\"mbr-fonts-style align-center\" mbr-theme-style=\"display-7\" mbr-if=\"showText\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nisl risus, ultrices non dictum\n                            id, varius ut erat. Etiam eget tincidunt eros, at sollicitudin mauris.\n                            <br>\n                        </p>\n                    </div>\n                    <div role=\"tab\" class=\"tab-button\" option=\"d\" mbr-if=\"tabsAmount > 3\">\n                        <h3 class=\"tab-head align-center mbr-fonts-style\" mbr-theme-style=\"display-7\">PRACTICAL EXAMPLES</h3>\n                    </div>\n                    <div role=\"tabpanel\" class=\"tab-content\" mbr-if=\"tabsAmount > 3\">\n                        <h2 class=\"tab-title mbr-fonts-style align-center\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\">PRACTICAL EXAMPLES</h2>\n                        <p class=\"mbr-fonts-style align-center\" mbr-theme-style=\"display-7\" mbr-if=\"showText\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nisl risus, ultrices non dictum\n                            id, varius ut erat. Etiam eget tincidunt eros, at sollicitudin mauris.\n                            <br>\n                        </p>\n                    </div>\n                    <div role=\"tab\" class=\"tab-button\" option=\"e\" mbr-if=\"tabsAmount > 4\">\n                        <h3 class=\"tab-head mbr-fonts-style align-center\" mbr-theme-style=\"display-7\">LIVE COMMUNICATION\n                        </h3>\n                    </div>\n                    <div role=\"tabpanel\" class=\"tab-content\" mbr-if=\"tabsAmount > 4\">\n                        <h2 class=\"tab-title align-center mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\">LIVE COMMUNICATION\n                        </h2>\n                        <p class=\"mbr-fonts-style align-center\" mbr-theme-style=\"display-7\" mbr-if=\"showText\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nisl risus, ultrices non dictum\n                            id, varius ut erat. Etiam eget tincidunt eros, at sollicitudin mauris.\n                            <br>\n                        </p>\n                    </div>\n                </amp-selector>\n            </div>\n\n        </div>\n\n\n    </div>\n\n</section>",
-          "_cid": "qMKtAZX0YI",
-          "_anchor": "features22-4",
-          "_protectedParams": [],
-          "_global": false,
-          "_once": false,
-          "_params": {}
-        },
-        {
-          "_styles": {
-            "& when not (@fullScreen)": {
-              "padding-top": "(@paddingTop * 15px)",
-              "padding-bottom": "(@paddingBottom * 15px)"
-            },
             "& when (@bg-type = 'color')": {
               "background-color": "@bg-value"
             },
@@ -172,62 +60,49 @@
                 "background-color": "@overlayColor",
                 "opacity": "@overlayOpacity"
               }
-            },
-            "amp-accordion section[expanded] .fa-plus": {
-              "display": "none"
-            },
-            "amp-accordion section:not([expanded]) .fa-minus": {
-              "display": "none"
-            },
-            ".fa-wrap": {
-              "display": "flex"
-            },
-            ".mbr-iconfont": {
-              "font-size": "~\"@{iconsSize}rem\"",
-              "color": "@iconsColor",
-              "margin": "auto 10px",
-              "display": "flex",
-              "padding": "10px 10px"
-            },
-            ".border-left": {
-              "border-left": "1px dotted gray"
-            },
-            ".mbr-section-title": {
-              "display": "inline-block",
-              "flex-direction": "row",
-              "padding": "0px 0px",
-              "margin-bottom": "15px",
-              "margin-top": "15px",
-              "&:hover": {
-                "box-shadow": "rgba(0, 0, 0, 0.247059) 0px 3px 15px -3px",
-                "transition": "box-shadow 0.5s"
-              }
-            },
-            "H4": {
-              "display": "inline-block",
-              "color": "#000000",
-              "text-align": "left",
-              "margin": "auto",
-              "padding-left": "20px"
-            },
-            "section, .i-amphtml-accordion-header": {
-              "background-color": "transparent"
-            },
-            "P": {
-              "text-align": "left"
-            },
-            ".main-title": {
-              "text-align": "left"
             }
           },
-          "_name": "features13",
-          "_customHTML": "<section class=\"features13\" group=\"Features\" plugins=\"amp-main, amp-accordion, font-awesome\" mbr-class=\"{'mbr-fullscreen': fullScreen}\">\n\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"range\" inline=\"\" title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"7\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline=\"\" title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"7\" condition=\"fullScreen == false\">\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked=\"\">\n        <select title=\"Tabs\" name=\"tabsAmount\">\n            <option value=\"2\">2</option>\n            <option value=\"3\">3</option>\n            <option value=\"4\" selected=\"\">4</option>\n            <option value=\"5\">5</option>\n            <option value=\"6\">6</option>\n        </select>\n        <input type=\"color\" title=\"Icons Color\" name=\"iconsColor\" value=\"#5e788d\">\n        <input type=\"range\" inline=\"\" title=\"Icons Size\" name=\"iconsSize\" min=\"1\" max=\"5\" step=\"1\" value=\"2\">\n\n        <fieldset type=\"background\" name=\"bg\">\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/background1.jpg\">\n            <input type=\"color\" title=\"Background Color\" value=\"#ffffff\" selected=\"\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked=\"\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay &amp;&amp; bg.type !== 'color'\">\n        <input type=\"range\" inline=\"\" title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.3\" condition=\"overlay &amp;&amp; bg.type !== 'color'\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay &amp;&amp; bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div class=\"container\">\n        <div class=\"mbr-row mbr-justify-content-center\">\n            <div class=\"mbr-col-md-12 mbr-col-lg-10\">\n                <h1 class=\"mbr-fonts-style main-title align-center mbr-bold\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".main-title\">UPCOMING EVENT</h1>\n            </div>\n        </div>\n        <div class=\"mbr-row mbr-justify-content-center\">\n            <div class=\"mbr-col-md-12 mbr-col-sm-12 mbr-col-lg-10\">\n                <amp-accordion class=\"accordion\">\n                    <section>\n                        <div class=\"mbr-section-title\">\n                            <div class=\"fa-wrap\">\n                                <div class=\"fa-wrap\">\n                                    <div class=\"fa fa-plus mbr-iconfont\"></div>\n                                    <div class=\"fa fa-minus mbr-iconfont\"></div>\n                                </div>\n                                <div class=\"fa-wrap border-left\">\n                                    <h4 class=\"mbr-fonts-style\" mbr-theme-style=\"display-7\">FAMOUS SPEAKERS</h4>\n                                </div>\n                            </div>\n                        </div>\n                        <p class=\"mbr-fonts-style\" mbr-theme-style=\"display-7\">\n                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nisl risus, ultrices non dictum id, varius ut erat. Etiam\n                            eget tincidunt eros, at sollicitudin mauris. Nulla vehicula tellus quis justo finibus bibendum.\n                            Nulla consequat at est vitae iaculis. Interdum et malesuada fames ac ante ipsum primis in faucibus.\n                        </p>\n                    </section>\n\n                    <section>\n                        <div class=\"mbr-section-title\">\n                            <div class=\"fa-wrap\">\n                                <div class=\"fa-wrap\">\n                                    <div class=\"fa fa-plus mbr-iconfont\"></div>\n                                    <div class=\"fa fa-minus mbr-iconfont\"></div>\n                                </div>\n                                <div class=\"fa-wrap border-left\">\n                                    <h4 class=\"mbr-fonts-style\" mbr-theme-style=\"display-7\">CREATIVE IDEAS\n                                    </h4>\n                                </div>\n                            </div>\n                        </div>\n                        <p class=\"mbr-fonts-style\" mbr-theme-style=\"display-7\">\n                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nisl risus, ultrices non dictum id, varius ut erat. Etiam\n                            eget tincidunt eros, at sollicitudin mauris. Nulla vehicula tellus quis justo finibus bibendum.\n                            Nulla consequat at est vitae iaculis. Interdum et malesuada fames ac ante ipsum primis in faucibus.\n                        </p>\n                    </section>\n\n                    <section mbr-class=\"{'super-hide': tabsAmount < 3}\">\n                        <div class=\"mbr-section-title\">\n                            <div class=\"fa-wrap\">\n                                <div class=\"fa-wrap\">\n                                    <div class=\"fa fa-plus mbr-iconfont\"></div>\n                                    <div class=\"fa fa-minus mbr-iconfont\"></div>\n                                </div>\n                                <div class=\"fa-wrap border-left\">\n                                    <h4 class=\"mbr-fonts-style\" mbr-theme-style=\"display-7\">UNIQUE TRAININGS&nbsp;</h4>\n                                </div>\n                            </div>\n                        </div>\n                        <p class=\"mbr-fonts-style\" mbr-theme-style=\"display-7\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nisl risus, ultrices non dictum\n                            id, varius ut erat. Etiam eget tincidunt eros, at sollicitudin mauris. Nulla vehicula tellus\n                            quis justo finibus bibendum. Nulla consequat at est vitae iaculis. Interdum et malesuada fames\n                            ac ante ipsum primis in faucibus.</p>\n                    </section>\n\n                    <section mbr-class=\"{'super-hide': tabsAmount < 4}\">\n                        <div class=\"mbr-section-title\">\n                            <div class=\"fa-wrap\">\n                                <div class=\"fa-wrap\">\n                                    <div class=\"fa fa-plus mbr-iconfont\"></div>\n                                    <div class=\"fa fa-minus mbr-iconfont\"></div>\n                                </div>\n                                <div class=\"fa-wrap border-left\">\n                                    <h4 class=\"mbr-fonts-style\" mbr-theme-style=\"display-7\">PRACTICAL EXAMPLES</h4>\n                                </div>\n                            </div>\n                        </div>\n                        <p class=\"mbr-fonts-style\" mbr-theme-style=\"display-7\">\n                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nisl risus, ultrices non dictum id, varius ut erat. Etiam\n                            eget tincidunt eros, at sollicitudin mauris. Nulla vehicula tellus quis justo finibus bibendum.\n                            Nulla consequat at est vitae iaculis. Interdum et malesuada fames ac ante ipsum primis in faucibus.\n                        </p>\n                    </section>\n\n                    <section mbr-class=\"{'super-hide': tabsAmount < 5}\">\n                        <div class=\"mbr-section-title\">\n                            <div class=\"fa-wrap\">\n                                <div class=\"fa-wrap\">\n                                    <div class=\"fa fa-plus mbr-iconfont\"></div>\n                                    <div class=\"fa fa-minus mbr-iconfont\"></div>\n                                </div>\n                                <div class=\"fa-wrap border-left\">\n                                    <h4 class=\"mbr-fonts-style\" mbr-theme-style=\"display-7\">LIVE COMMUNICATION\n                                    </h4>\n                                </div>\n                            </div>\n                        </div>\n                        <p class=\"mbr-fonts-style\" mbr-theme-style=\"display-7\">\n                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nisl risus, ultrices non dictum id, varius ut erat. Etiam\n                            eget tincidunt eros, at sollicitudin mauris. Nulla vehicula tellus quis justo finibus bibendum.\n                            Nulla consequat at est vitae iaculis. Interdum et malesuada fames ac ante ipsum primis in faucibus.\n                        </p>\n                    </section>\n                    <section mbr-class=\"{'super-hide': tabsAmount < 6}\">\n                        <div class=\"mbr-section-title\">\n                            <div class=\"fa-wrap\">\n                                <div class=\"fa-wrap\">\n                                    <div class=\"fa fa-plus mbr-iconfont\"></div>\n                                    <div class=\"fa fa-minus mbr-iconfont\"></div>\n                                </div>\n                                <div class=\"fa-wrap border-left\">\n                                    <h4 class=\"mbr-fonts-style\" mbr-theme-style=\"display-7\">FEEDBACK</h4>\n                                </div>\n                            </div>\n                        </div>\n                        <p class=\"mbr-fonts-style\" mbr-theme-style=\"display-7\">\n                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nisl risus, ultrices non dictum id, varius ut erat. Etiam\n                            eget tincidunt eros, at sollicitudin mauris. Nulla vehicula tellus quis justo finibus bibendum.\n                            Nulla consequat at est vitae iaculis. Interdum et malesuada fames ac ante ipsum primis in faucibus.\n                        </p>\n                    </section>\n                </amp-accordion>\n            </div>\n        </div>\n    </div>\n</section>",
-          "_cid": "qMKuceoN7v",
+          "_name": "header1",
+          "_customHTML": "<section class=\"header1\" group=\"Headers\" plugins=\"amp-main\" mbr-class=\"{'mbr-fullscreen': fullScreen}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\" checked=\"\">\n        <input type=\"range\" inline=\"\" title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline=\"\" title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked=\"\">\n        <!-- <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubTitle\"> -->\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\">\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\">\n\n        <fieldset type=\"background\" name=\"bg\">\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/background1.jpg\" selected=\"\">\n            <input type=\"color\" title=\"Background Color\" value=\"#f6efe9\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type!='color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#f6efe9\" condition=\"bg.type!='color' &amp;&amp; overlay\">\n        <input type=\"range\" inline=\"\" title=\"Overlay Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"bg.type!='color' &amp;&amp; overlay\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay &amp;&amp; bg.type !== 'color'\"></div>\n    <div class=\"container\">\n        <h1 class=\"mbr-section-title mbr-fonts-style align-center mbr-bold mbr-black\" mbr-theme-style=\"display-5\" data-app-selector=\".mbr-section-title\" mbr-if=\"showTitle\">\n            Create awesome mobile-friendly websites! <br> No coding and free.</h1>\n        \n        <p class=\"mbr-fonts-style mbr-text align-center mbr-black\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">\n            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut id odio ad dolore modi tenetur vel qui necessitatibus veniam, voluptatum. Soluta impedit esse quos, debitis fuga illum pariatur nam placeat.\n        </p>\n\n        <div class=\"mbr-section-btn align-center\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\" mbr-buttons=\"\" mbr-theme-style=\"display-4\">\n             <a class=\"btn btn-md btn-primary\" href=\"https://mobirise.com\">\n                LEARN MORE\n            </a>\n        </div>\n    </div>\n</section>",
+          "_cid": "qN06CGwTHz",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
           "_params": {},
-          "_anchor": "features13-5"
+          "_anchor": "header1-2"
+        },
+        {
+          "_params": {
+            "token": "6666085868.727bfe1.0b93abc8733349349f76b2d73f75543c",
+            "showTitle": true,
+            "layoutGridRadio": true,
+            "imagesPerRowGrid": 4,
+            "rows": 2,
+            "showMoreButton": true,
+            "layoutSliderRadio": false,
+            "imagesPerRowSlider": 4,
+            "spacing": 5,
+            "fullWidth": false,
+            "paddingTop": 1,
+            "paddingBottom": 1,
+            "bgColorRadio": true,
+            "bgColor": "#fafafa",
+            "bgImageRadio": false,
+            "bgImage": "@ADDONS_PATH@/instagram-feed/instagram-feed-block/assets/instagram-background.jpg",
+            "overlay": false,
+            "overlayColor": "#efefef",
+            "overlayOpacity": 0.6
+          },
+          "title": "Instagram",
+          "buttons": "<a data-app-btn=\"true\" class=\"btn btn-md btn-primary\" href=\"#\">Показать больше</a>",
+          "display2": "display-2",
+          "display4": "display-4",
+          "alias": "instagram-feed",
+          "_tags": [
+            "Расширения"
+          ],
+          "_name": "instagram-feed-block",
+          "_anchor": "instagram-feed-block-0"
         }
       ]
     }
