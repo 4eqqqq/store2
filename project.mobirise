@@ -1,6 +1,6 @@
 {
   "settings": {
-    "name": "Site-03-21_1623",
+    "name": "Site-03-22_1618",
     "currentPage": "index.html",
     "theme": {
       "name": "lightamp",
@@ -30,9 +30,8 @@
     },
     "path": "@PROJECT_PATH@",
     "versionFirst": "4.6.6",
-    "uniqCompNum": 11,
-    "versionPublish": "4.6.6",
-    "screenshot": "screenshot.png"
+    "uniqCompNum": 2,
+    "versionPublish": "4.6.6"
   },
   "pages": {
     "index.html": {
@@ -47,62 +46,30 @@
       "components": [
         {
           "_styles": {
-            "& when not (@fullScreen)": {
-              "padding-top": "(@paddingTop * 15px)",
-              "padding-bottom": "(@paddingBottom * 15px)"
-            },
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
             "& when (@bg-type = 'color')": {
               "background-color": "@bg-value"
             },
             "& when (@bg-type = 'image')": {
-              "background-image": "url(@bg-value)",
-              ".mbr-overlay": {
-                "background-color": "@overlayColor",
-                "opacity": "@overlayOpacity"
-              }
+              "background-image": "url(@bg-value)"
+            },
+            ".container-fluid": {
+              "width": "100%",
+              "padding-right": "15px",
+              "padding-left": "15px",
+              "margin-right": "auto",
+              "margin-left": "auto"
             }
           },
-          "_name": "header1",
-          "_customHTML": "<section class=\"header1\" group=\"Headers\" plugins=\"amp-main\" mbr-class=\"{'mbr-fullscreen': fullScreen}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <!-- <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubTitle\"> -->\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\">\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\">\n\n        <fieldset type=\"background\" name=\"bg\">\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/background1.jpg\" selected>\n            <input type=\"color\" title=\"Background Color\" value=\"#f6efe9\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type!='color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#f6efe9\" condition=\"bg.type!='color' && overlay\">\n        <input type=\"range\" inline title=\"Overlay Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"bg.type!='color' && overlay\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\"></div>\n    <div class=\"container\">\n        <h1 class=\"mbr-section-title mbr-fonts-style align-center mbr-bold mbr-black\" mbr-theme-style=\"display-5\" data-app-selector=\".mbr-section-title\" mbr-if=\"showTitle\">\n            Create awesome mobile-friendly websites! <br> No coding and free.</h1>\n        \n        <p class=\"mbr-fonts-style mbr-text align-center mbr-black\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">\n            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut id odio ad dolore modi tenetur vel qui necessitatibus veniam, voluptatum. Soluta impedit esse quos, debitis fuga illum pariatur nam placeat.\n        </p>\n\n        <div class=\"mbr-section-btn align-center\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\" mbr-buttons mbr-theme-style=\"display-4\">\n             <a class=\"btn btn-md btn-primary\" href=\"https://mobirise.com\">\n                LEARN MORE\n            </a>\n        </div>\n    </div>\n</section>",
-          "_cid": "qN0FJ3AAhU",
-          "_anchor": "header1-a",
+          "_name": "test",
+          "_customHTML": "<section class=\"instagram-feed1 mbr-section\" group=\"Instagram\" plugins=\"amp-main, amp-iframe\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline=\"\" title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline=\"\" title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"2\">\n\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" condition=\"direction === 'row'\">\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\">\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubtitle\">\n        <input type=\"range\" inline=\"\" title=\"Cards Count\" name=\"cardsCount\" min=\"1\" max=\"8\" step=\"1\" value=\"4\">\n        <select title=\"Direction\" name=\"direction\">\n            <option value=\"row\" selected=\"\">Row</option>\n            <option value=\"column\">Column</option>\n        </select>\n        <input type=\"checkbox\" title=\"Show Caption\" name=\"showCaption\" checked=\"\">\n        <input type=\"range\" inline=\"\" title=\"Spacing\" name=\"spacing\" min=\"0\" max=\"40\" step=\"1\" value=\"15\">\n\n        <fieldset type=\"background\" name=\"bg\">\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/background3.jpg\">\n            <input type=\"color\" title=\"Background Color\" value=\"#ffffff\" selected=\"\">\n        </fieldset>\n    <!-- End block parameters -->\n    </mbr-parameters>\n    \n    <div mbr-class=\"{'container': !fullWidth || direction === 'column',\n                     'container-fluid': fullWidth &amp;&amp; direction === 'row'}\">\n        <h1 class=\"mbr-fonts-style align-center mbr-bold\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\">\n            Instagram Feed AMP\n        </h1>\n        <h3 class=\"mbr-fonts-style align-center\" mbr-theme-style=\"display-5\" mbr-if=\"showSubtitle\">\n            Lorem ipsum dolor sit amet, consectetur adipisicing elit.\n        </h3>\n        <div class=\"mbr-row mbr-justify-content-center\">\n            <div class=\"frame-wrapper\">\n                <amp-iframe width=\"300\" height=\"600\" frameborder=\"0\" layout=\"fixed\" sandbox=\"allow-scripts allow-same-origin\" src=\"https://4eqqqq.github.io/store1/\">\n                    <amp-img layout=\"fill\" src=\"../_images/background3.jpg\" placeholder=\"\"></amp-img>\n                </amp-iframe>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "qN1UgHD3pO",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
-          "_params": {}
-        },
-        {
-          "_params": {
-            "token": "6666085868.727bfe1.0b93abc8733349349f76b2d73f75543c",
-            "showTitle": true,
-            "layoutGridRadio": true,
-            "imagesPerRowGrid": 4,
-            "rows": 2,
-            "showMoreButton": true,
-            "layoutSliderRadio": false,
-            "imagesPerRowSlider": 4,
-            "spacing": 5,
-            "fullWidth": false,
-            "paddingTop": 1,
-            "paddingBottom": 1,
-            "bgColorRadio": false,
-            "bgColor": "#fafafa",
-            "bgImageRadio": true,
-            "bgImage": "@ADDONS_PATH@/instagram-feed/instagram-feed-block/assets/instagram-background.jpg",
-            "overlay": false,
-            "overlayColor": "#efefef",
-            "overlayOpacity": 0.6
-          },
-          "title": "Instagram",
-          "buttons": "<a data-app-btn=\"true\" class=\"btn btn-md btn-primary\" href=\"#\">Показать больше</a>",
-          "display2": "display-2",
-          "display4": "display-4",
-          "alias": "instagram-feed",
-          "_tags": [
-            "Расширения"
-          ],
-          "_name": "instagram-feed-block",
-          "_anchor": "instagram-feed-block-7"
+          "_params": {},
+          "_anchor": "test-1"
         }
       ]
     }
