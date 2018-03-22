@@ -40,11 +40,14 @@ div,span,h1,h2,h3,h4,h5,h6,p,blockquote,a,ol,ul,li,figcaption{font: inherit;}sec
     </div>
 </section>
 
-<div class="instagram-wrapper"><iframe width="800" height="400" layout="fixed" frameborder="0" srcdoc="<!DOCTYPE html><html lang=&quot;en&quot;><head><meta charset=&quot;UTF-8&quot;><title>Instagram Feed</title><link rel=&quot;stylesheet&quot; href=&quot;style.css&quot;>
-  <link rel=&quot;stylesheet&quot; href=&quot;slick.css&quot;>
-  <script src=&quot;https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js&quot;></script><script src=&quot;index.js&quot;></script>
-  <script src=&quot;slick.min.js&quot;></script>
-  </head><body><section class=&quot;mbr-instagram-feed&quot; data-rows=&quot;2&quot; data-per-row-slider=&quot;&quot; data-spacing=&quot;5&quot; data-full-width=&quot;&quot; data-token=&quot;6666085868.727bfe1.0b93abc8733349349f76b2d73f75543c&quot; data-per-row-grid=&quot;4&quot; id=&quot;instagram-feed-block-7&quot; data-rv-view=&quot;3&quot; style=&quot;padding-top: 40px; padding-bottom: 40px;&quot;>
+<iframe srcdoc="<!DOCTYPE html>
+<html>
+<head>
+   <link rel=&quot;stylesheet&quot; href=&quot;assets/web/slick.css&quot;>
+   <link rel=&quot;stylesheet&quot; href=&quot;assets/web/style.css&quot;>
+</head>
+<body>
+<section class=&quot;mbr-instagram-feed&quot; data-rows=&quot;2&quot; data-per-row-slider=&quot;&quot; data-spacing=&quot;5&quot; data-full-width=&quot;&quot; data-token=&quot;6666085868.727bfe1.0b93abc8733349349f76b2d73f75543c&quot; data-per-row-grid=&quot;4&quot; id=&quot;instagram-feed-block-7&quot; data-rv-view=&quot;3&quot; style=&quot;padding-top: 40px; padding-bottom: 40px;&quot;>
     
     <div class=&quot;container container_toggle&quot;>
         <div class=&quot;row&quot;>
@@ -57,7 +60,13 @@ div,span,h1,h2,h3,h4,h5,h6,p,blockquote,a,ol,ul,li,figcaption{font: inherit;}sec
             </div>
         </div>
     </div>
-</section></body></html>" sandbox="allow-scripts allow-same-origin"> </iframe></div>
+</section>
+<script src=&quot;assets/web/jquery.min.js&quot;></script>
+<script src=&quot;assets/web/index.js&quot;></script>
+<script src=&quot;assets/web/slick.min.js&quot;></script>
+<script>$(function(){ $(&quot;.mbr-instagram-feed&quot;).trigger(&quot;add.cards&quot;) })</script>
+</body>
+</html>" frameborder="0" width="100%" height="400px"></iframe>
 
 
   
