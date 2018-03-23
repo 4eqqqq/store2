@@ -1,6 +1,6 @@
 {
   "settings": {
-    "name": "Site-03-22_1618",
+    "name": "Site-03-23_1020",
     "currentPage": "index.html",
     "theme": {
       "name": "lightamp",
@@ -30,9 +30,8 @@
     },
     "path": "@PROJECT_PATH@",
     "versionFirst": "4.6.6",
-    "uniqCompNum": 15,
-    "versionPublish": "4.6.6",
-    "screenshot": "screenshot.png"
+    "uniqCompNum": 2,
+    "versionPublish": "4.6.6"
   },
   "pages": {
     "index.html": {
@@ -64,53 +63,12 @@
           },
           "_name": "header1",
           "_customHTML": "<section class=\"header1\" group=\"Headers\" plugins=\"amp-main\" mbr-class=\"{'mbr-fullscreen': fullScreen}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\" checked=\"\">\n        <input type=\"range\" inline=\"\" title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline=\"\" title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked=\"\">\n        <!-- <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubTitle\"> -->\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\">\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\">\n\n        <fieldset type=\"background\" name=\"bg\">\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/background1.jpg\" selected=\"\">\n            <input type=\"color\" title=\"Background Color\" value=\"#f6efe9\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type!='color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#f6efe9\" condition=\"bg.type!='color' &amp;&amp; overlay\">\n        <input type=\"range\" inline=\"\" title=\"Overlay Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"bg.type!='color' &amp;&amp; overlay\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay &amp;&amp; bg.type !== 'color'\"></div>\n    <div class=\"container\">\n        <h1 class=\"mbr-section-title mbr-fonts-style align-center mbr-bold mbr-black\" mbr-theme-style=\"display-5\" data-app-selector=\".mbr-section-title\" mbr-if=\"showTitle\">\n            Create awesome mobile-friendly websites! <br> No coding and free.</h1>\n        \n        <p class=\"mbr-fonts-style mbr-text align-center mbr-black\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">\n            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut id odio ad dolore modi tenetur vel qui necessitatibus veniam, voluptatum. Soluta impedit esse quos, debitis fuga illum pariatur nam placeat.\n        </p>\n\n        <div class=\"mbr-section-btn align-center\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\" mbr-buttons=\"\" mbr-theme-style=\"display-4\">\n             <a class=\"btn btn-md btn-primary\" href=\"https://mobirise.com\">\n                LEARN MORE\n            </a>\n        </div>\n    </div>\n</section>",
-          "_cid": "qN1WhVPVYa",
-          "_anchor": "header1-5",
+          "_cid": "qN6ikpZVmj",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
-          "_params": {}
-        },
-        {
-          "_styles": {
-            "& when not (@fullScreen)": {
-              "padding-top": "(@paddingTop * 15px)",
-              "padding-bottom": "(@paddingBottom * 15px)"
-            },
-            "& when (@bg-type = 'color')": {
-              "background-color": "@bg-value"
-            },
-            "& when (@bg-type = 'image')": {
-              "background-image": "url(@bg-value)",
-              ".mbr-overlay": {
-                "background-color": "@overlayColor",
-                "opacity": "@overlayOpacity"
-              }
-            },
-            "& when (@showTitle)": {
-              ".mbr-section-title": {
-                "padding-top": "1.5rem",
-                "padding-bottom": "1.5rem"
-              }
-            },
-            ".amp-iconfont": {
-              "padding": "1.5rem",
-              "margin": "auto",
-              "color": "@iconsColor",
-              "font-size": "~\"@{iconsSize}rem\""
-            },
-            ".block-text": {
-              "color": "#a2a0a0"
-            }
-          },
-          "_name": "features17",
-          "_customHTML": "<section class=\"features17\" group=\"Features\" plugins=\"amp-main\" mbr-class=\"{'mbr-fullscreen':fullScreen}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"range\" inline=\"\" title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"5\" condition=\"!fullScreen\">\n        <input type=\"range\" inline=\"\" title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"5\" condition=\"!fullScreen\">\n        <input type=\"checkbox\" title=\"Show Icons\" name=\"showIcons\" checked=\"\">\n        <input type=\"range\" inline=\"\" title=\"Icons Size\" name=\"iconsSize\" min=\"3\" max=\"15\" step=\"0.1\" value=\"9\" condition=\"showIcons\">\n        <input type=\"color\" title=\"Icons Color\" name=\"iconsColor\" value=\"#f9d5bd\" condition=\"showIcons\">\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\">\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked=\"\">\n        <input type=\"checkbox\" title=\"Show Author\" name=\"showAuthor\">\n    \n        <fieldset type=\"background\" name=\"bg\">\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/background2.jpg\">\n            <input type=\"color\" title=\"Background Color\" value=\"#ffffff\" selected=\"\">\n        </fieldset>\n    \n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" checked=\"\" condition=\"bg.type!='color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#464646\" condition=\"bg.type!='color' &amp;&amp; overlay\">\n        <input type=\"range\" inline=\"\" title=\"Overlay Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"bg.type!='color' &amp;&amp; overlay\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n    \n    <div class=\"mbr-overlay\" mbr-if=\"overlay &amp;&amp; bg.type !== 'color'\"></div>\n    <div class=\"container align-center\">\n        <div class=\"mbr-row mbr-justify-content-center\">\n            <div class=\"mbr-col-md-10 mbr-col-lg-8 align-center\">\n                <div class=\"icon-wrap\">\n                    <span mbr-icon=\"\" mbr-if=\"showIcons\" class=\"amp-iconfont fa-lightbulb-o fa\"></span>\n                </div>\n                <h2 class=\"mbr-section-title mbr-fonts-style mbr-bold\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title, .icon-wrap\">\n                    All Order Over $75 Ship Free\n                </h2>\n                <p class=\"block-text mbr-text mbr-fonts-style\" mbr-theme-style=\"display-6\" mbr-if=\"showText\" data-app-selector=\".block-text\">\n                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia earum nam quibusdam dolore dicta assumenda, quas at, aliquam excepturi. Enim ducimus assumenda esse, natus eos sint obcaecati asperiores at explicabo.\n                </p>\n                <h3 class=\"block-subtext mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showAuthor\" data-app-selector=\".block-subtext\">\n                    – AThemes.\n                </h3>\n            </div>\n        </div>\n    </div>\n</section>\n",
-          "_cid": "qN5XFa731G",
-          "_anchor": "features17-9",
-          "_protectedParams": [],
-          "_global": false,
-          "_once": false,
-          "_params": {}
+          "_params": {},
+          "_anchor": "header1-1"
         },
         {
           "_styles": {
@@ -131,44 +89,13 @@
             }
           },
           "_name": "test",
-          "_customHTML": "<section class=\"instagram-feed1 mbr-section\" group=\"Instagram\" plugins=\"amp-main, amp-iframe\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline=\"\" title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline=\"\" title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"2\">\n\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" condition=\"direction === 'row'\">\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\">\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubtitle\">\n        <input type=\"range\" inline=\"\" title=\"Cards Count\" name=\"cardsCount\" min=\"1\" max=\"8\" step=\"1\" value=\"4\">\n        <select title=\"Direction\" name=\"direction\">\n            <option value=\"row\" selected=\"\">Row</option>\n            <option value=\"column\">Column</option>\n        </select>\n        <input type=\"checkbox\" title=\"Show Caption\" name=\"showCaption\" checked=\"\">\n        <input type=\"range\" inline=\"\" title=\"Spacing\" name=\"spacing\" min=\"0\" max=\"40\" step=\"1\" value=\"15\">\n\n        <fieldset type=\"background\" name=\"bg\">\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/background3.jpg\">\n            <input type=\"color\" title=\"Background Color\" value=\"#ffffff\" selected=\"\">\n        </fieldset>\n    <!-- End block parameters -->\n    </mbr-parameters>\n    \n    <div mbr-class=\"{'container': !fullWidth || direction === 'column',\n                     'container-fluid': fullWidth &amp;&amp; direction === 'row'}\">\n        <h1 class=\"mbr-fonts-style align-center mbr-bold\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\">\n            Instagram Feed AMP\n        </h1>\n        <h3 class=\"mbr-fonts-style align-center\" mbr-theme-style=\"display-5\" mbr-if=\"showSubtitle\">\n            Lorem ipsum dolor sit amet, consectetur adipisicing elit.\n        </h3>\n        <div class=\"mbr-row mbr-justify-content-center\">\n            <div class=\"frame-wrapper\">\n                <amp-iframe width=\"700\" height=\"600\" frameborder=\"0\" layout=\"fixed\" sandbox=\"allow-scripts allow-same-origin\" src=\"https://4eqqqq.github.io/store1/\">\n                    <amp-img layout=\"fill\" src=\"../_images/background3.jpg\" placeholder=\"\"></amp-img>\n                </amp-iframe>\n            </div>\n        </div>\n    </div>\n</section>",
-          "_cid": "qN6fidfUJz",
+          "_customHTML": "<section class=\"instagram-feed1 mbr-section\" group=\"Instagram\" plugins=\"amp-main, amp-iframe\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline=\"\" title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline=\"\" title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"2\">\n\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" condition=\"direction === 'row'\">\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\">\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubtitle\">\n        <input type=\"range\" inline=\"\" title=\"Cards Count\" name=\"cardsCount\" min=\"1\" max=\"8\" step=\"1\" value=\"4\">\n        <select title=\"Direction\" name=\"direction\">\n            <option value=\"row\" selected=\"\">Row</option>\n            <option value=\"column\">Column</option>\n        </select>\n        <input type=\"checkbox\" title=\"Show Caption\" name=\"showCaption\" checked=\"\">\n        <input type=\"range\" inline=\"\" title=\"Spacing\" name=\"spacing\" min=\"0\" max=\"40\" step=\"1\" value=\"15\">\n\n        <fieldset type=\"background\" name=\"bg\">\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/background3.jpg\">\n            <input type=\"color\" title=\"Background Color\" value=\"#ffffff\" selected=\"\">\n        </fieldset>\n    <!-- End block parameters -->\n    </mbr-parameters>\n    \n    <div mbr-class=\"{'container': !fullWidth || direction === 'column',\n                     'container-fluid': fullWidth &amp;&amp; direction === 'row'}\">\n        <h1 class=\"mbr-fonts-style align-center mbr-bold\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\">\n            Instagram Feed AMP\n        </h1>\n        <h3 class=\"mbr-fonts-style align-center\" mbr-theme-style=\"display-5\" mbr-if=\"showSubtitle\">\n            Lorem ipsum dolor sit amet, consectetur adipisicing elit.\n        </h3>\n        <div class=\"mbr-row mbr-justify-content-center\">\n            <div class=\"frame-wrapper\">\n                <amp-iframe width=\"700\" height=\"600\" frameborder=\"0\" layout=\"fixed\" sandbox=\"allow-scripts allow-same-origin\" src=\"https://mobirise-test.000webhostapp.com\">\n                    <amp-img layout=\"fill\" src=\"../_images/background3.jpg\" placeholder=\"\"></amp-img>\n                </amp-iframe>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "qN6ijo2ZPh",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
           "_params": {},
-          "_anchor": "test-e"
-        },
-        {
-          "_styles": {
-            "& when not (@fullScreen)": {
-              "padding-top": "(@paddingTop * 15px)",
-              "padding-bottom": "(@paddingBottom * 15px)"
-            },
-            "& when (@bg-type = 'color')": {
-              "background-color": "@bg-value"
-            },
-            "& when (@bg-type = 'image')": {
-              "background-image": "url(@bg-value)",
-              ".mbr-overlay": {
-                "background-color": "@overlayColor",
-                "opacity": "@overlayOpacity"
-              }
-            },
-            "& when (@showText)": {
-              ".mbr-text": {
-                "padding-top": "0"
-              }
-            }
-          },
-          "_name": "features16",
-          "_customHTML": "<section class=\"features16\" group=\"Features\" plugins=\"amp-main\" mbr-class=\"{'mbr-fullscreen': fullScreen}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"range\" inline=\"\" title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline=\"\" title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked=\"\">\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\">\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\" checked=\"\">\n\n        <fieldset type=\"background\" name=\"bg\">\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/background1.jpg\">\n            <input type=\"color\" title=\"Background Color\" value=\"#f9d5bd\" selected=\"\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" checked=\"\" condition=\"bg.type!='color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#f9d5bd\" condition=\"bg.type!='color' &amp;&amp; overlay\">\n        <input type=\"range\" inline=\"\" title=\"Overlay Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"bg.type!='color' &amp;&amp; overlay\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay &amp;&amp; bg.type !== 'color'\"></div>\n    <div class=\"container align-center\">\n        <h1 class=\"mbr-section-title mbr-fonts-style mbr-bold\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\">\n            Don't miss a thing,<br>\n            subscribe to our quarterly newsletter\n        </h1>\n        <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">\n            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut id odio ad dolore modi tenetur vel qui necessitatibus veniam, voluptatum. Soluta impedit esse quos, debitis fuga illum pariatur nam placeat.\n        </p>\n\n        <div class=\"mbr-section-btn\" mbr-theme-style=\"display-4\" mbr-buttons=\"\" data-toolbar=\"-mbrBtnMove\" mbr-if=\"showButtons\">\n             <a class=\"btn-underline text-warning\" href=\"https://mobirise.com\">\n                JOIN OUR MAILING LIST\n            </a>\n        </div>\n    </div>\n</section>",
-          "_cid": "qN5XFH1I7A",
-          "_anchor": "features16-a",
-          "_protectedParams": [],
-          "_global": false,
-          "_once": false,
-          "_params": {}
+          "_anchor": "test-0"
         }
       ]
     }
